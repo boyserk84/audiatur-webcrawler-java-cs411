@@ -1,4 +1,8 @@
+import java.beans.XMLEncoder;
+import java.io.BufferedOutputStream;
 import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.Serializable;
@@ -89,6 +93,35 @@ abstract public class Crawler implements Serializable{
 		}
 	}
 
+	/**
+	 * Keep reading buffer until meet a target string
+	 * @param in bufferedreader 
+	 * @param until_string target string
+	 * @throws IOException
+	 */
+	protected void readUntil(BufferedReader in, String until_string) throws IOException {
+		while (inputLine.indexOf(until_string) <= 0)
+		{
+			inputLine = in.readLine();	
+			if (inputLine ==null) return;
+		}
+	}
+	
+	/**
+	 * Save all fetching entries as XML file
+	 * @throws FileNotFoundException
+	 */
+	protected void saveAsXML(List<Artist> list) throws FileNotFoundException
+	{
+		XMLEncoder e = new XMLEncoder(
+		                new BufferedOutputStream(
+		                    new FileOutputStream("Roadrunner_test.xml")));
+
+		e.writeObject(list);
+
+		e.close();
+	}
+	
 	/**
 	 * Print result from the crawler
 	 */

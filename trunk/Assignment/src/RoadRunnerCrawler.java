@@ -1,13 +1,18 @@
+import java.beans.XMLEncoder;
+import java.io.BufferedOutputStream;
 import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.Serializable;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.ArrayList;
 import java.util.List;
 
 
-public class RoadRunnerCrawler extends Crawler{
+public class RoadRunnerCrawler extends Crawler implements Serializable{
 
 	/**
 	 * 
@@ -57,6 +62,7 @@ public class RoadRunnerCrawler extends Crawler{
 	    		this.arr_artist.add(new Artist(inputLine.substring
 	    				(inputLine.lastIndexOf("alt=\"")+5,inputLine.indexOf("\" /></a>"))
 	    				));
+	    		// getting the latest band added in the list and fetch info
 	    		fetchEachArtist(this.arr_url.get(this.arr_url.size()-1),this.arr_artist.get(this.arr_artist.size()-1));
 	    	}
 	    }
@@ -93,6 +99,7 @@ public class RoadRunnerCrawler extends Crawler{
 	    BufferedReader in = new BufferedReader(
 	                            new InputStreamReader(
 	                            web_connect.getInputStream()));
+	    String album_name = null;
 	    while ((inputLine = in.readLine()) != null)
 	    {
 	    	//System.out.println(inputLine);
@@ -101,7 +108,6 @@ public class RoadRunnerCrawler extends Crawler{
 	    	if (inputLine.indexOf("Official Biography")>=0)
 	    	{
 	    		inputLine = in.readLine();
-	    		//System.out.println(inputLine);
 	    		entry.setDes(inputLine);
 	    	}//if
 	    	
@@ -112,18 +118,45 @@ public class RoadRunnerCrawler extends Crawler{
 	    		inputLine = in.readLine();
 	    		//entry.addAlbum(inputLine.substring(inputLine.lastIndexOf("\">")+2,inputLine.indexOf("</a>")), date)
 	    		//System.out.println(inputLine.substring(inputLine.lastIndexOf("\">")+2,inputLine.indexOf("</a>")));
-	    		String temp = (inputLine.substring(inputLine.lastIndexOf("\">")+2,inputLine.indexOf("</a>")));
+	    		album_name = (inputLine.substring(inputLine.lastIndexOf("\">")+2,inputLine.indexOf("</a>")));
 	    		inputLine = in.readLine();
-	    		entry.addAlbum(temp, (inputLine.substring(inputLine.indexOf("</strong>")+10)));
+	    		entry.addAlbum(album_name, (inputLine.substring(inputLine.indexOf("</strong>")+10)));
 	    		//System.out.println(inputLine.substring(inputLine.indexOf("</strong>")+10));
+	    	} else
+	    	
+	    	// Alternatively, fetch album info 
+	    	if (inputLine.indexOf("<li class=\"latest_album\">")>=0)
+	    	{
+	    		readUntil(in, "title=\"");
+	    		album_name = (inputLine.substring(inputLine.indexOf("title=\"")+7,inputLine.indexOf("\" class=\"home_mini\"")));	
+	    		readUntil (in,"Release Date:");
+	    		
+	    		entry.addAlbum(album_name, (inputLine.substring(inputLine.indexOf("</strong>")+10,inputLine.indexOf("<br"))));
 	    	}
 	    }//while
 	    in.close();
 	}
 
+	/**
+	 * Save As XML file
+	 * @throws FileNotFoundException
+	 */
+	public void saveAsXML() throws FileNotFoundException
+	{
+		saveAsXML(this.arr_artist);
+	}
+	
 	@Override
 	protected String getURLFromPage(int page) throws IOException {
 		// TODO Auto-generated method stub
 		return null;
+	}
+
+	public List<Artist> getArr_artist() {
+		return arr_artist;
+	}
+
+	public void setArr_artist(List<Artist> arr_artist) {
+		this.arr_artist = arr_artist;
 	}
 }

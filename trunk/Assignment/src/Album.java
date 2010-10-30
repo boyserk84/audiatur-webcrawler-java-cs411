@@ -1,10 +1,15 @@
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
 
-public class Album {
+public class Album implements Serializable {
 	
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private String artist_id;
 	private String album_name;
 	private String release_date;
@@ -24,6 +29,11 @@ public class Album {
 		this.album_name = name;
 		this.release_date = release_date;
 		list_of_songs = new ArrayList<Song>();
+	}
+	
+	public Album()
+	{
+		
 	}
 
 	/**
@@ -63,6 +73,14 @@ public class Album {
 
 	public void setRelease_date(String release_date) {
 		this.release_date = release_date;
+	}
+
+	public List<Song> getList_of_songs() {
+		return list_of_songs;
+	}
+
+	public void setList_of_songs(List<Song> list_of_songs) {
+		this.list_of_songs = list_of_songs;
 	}
 
 }

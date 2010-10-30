@@ -1,8 +1,14 @@
-
-public class Song {
-
+import java.io.Serializable;
 
 
+public class Song implements Serializable{
+
+
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private String name;
 	private float duration;
 	
@@ -23,6 +29,11 @@ public class Song {
 		this.duration = duration;
 		this.album_name = a_name;
 		this.artist_id = id;
+	}
+	
+	public Song()
+	{
+		
 	}
 	
 	public String getName() {
