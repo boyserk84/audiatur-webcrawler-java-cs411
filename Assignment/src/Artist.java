@@ -1,9 +1,14 @@
 
 import java.util.*;
+import java.io.Serializable;
 import java.sql.Date;
 
 
-public class Artist {
+public class Artist implements Serializable{
+		/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 		/**
 		 * Artist name
 		 */
@@ -34,6 +39,10 @@ public class Artist {
 		public Artist(String n)
 		{
 			this(n, null, null);
+		}
+		public Artist()
+		{
+			
 		}
 		
 		@SuppressWarnings("deprecation")
@@ -108,6 +117,7 @@ public class Artist {
 		public void setArr_albums(List<Album> arr_albums) {
 			this.arr_albums = arr_albums;
 		}
+		
 		
 		
 }

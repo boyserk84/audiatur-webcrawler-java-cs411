@@ -11,6 +11,7 @@ public class RoadRunnerCrawlerTest extends TestCase{
 		RoadRunnerCrawler test = new RoadRunnerCrawler();
 		//test.fetchEachArtist("airbourne", null);
 		test.printOut();
+		test.saveAsXML();
 	}
 
 }
