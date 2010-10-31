@@ -21,6 +21,12 @@ public class Genre {
 	 */
 	private Genre parent_g;
 	
+	/**
+	 * Constructor for genre
+	 * @param n name
+	 * @param d description 
+	 * @param parent parent or main genre if this is a sub
+	 */
 	public Genre(String n, String d, Genre parent)
 	{
 		this.name = n;
@@ -29,7 +35,14 @@ public class Genre {
 		this.sub_g = new ArrayList<Genre>();
 	}
 	
-	
+	/**
+	 * Add sub genre;
+	 * @param g
+	 */
+	public void addSubGenre(Genre g)
+	{
+		this.sub_g.add(new Genre(g.getName(),g.getDes(),this));
+	}
 	
 	/**
 	 * Checking if this is a main genre

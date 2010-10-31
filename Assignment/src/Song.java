@@ -17,11 +17,10 @@ public class Song implements Serializable{
 	
 	/**
 	 * Constructor
-	 * @param name
-	 * @param duration
-	 * @param title
-	 * @param a_name
-	 * @param id
+	 * @param name name of the song
+	 * @param duration duration
+	 * @param a_name album name
+	 * @param id artist id
 	 */
 	public Song(String name, float duration, String a_name, String id)
 	{
