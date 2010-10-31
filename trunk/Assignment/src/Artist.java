@@ -9,6 +9,7 @@ public class Artist implements Serializable{
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+	private static long id_gen = 1;	// generate artist id
 		/**
 		 * Artist name
 		 */
@@ -33,6 +34,11 @@ public class Artist implements Serializable{
 		private List<Album> arr_albums;
 		
 		/**
+		 * List of artist's genre
+		 */
+		private List<Genre> arr_genre;
+		
+		/**
 		 * Constructor
 		 * @param n
 		 */
@@ -51,8 +57,18 @@ public class Artist implements Serializable{
 			this.year_found = fetchYearFromString(date);
 			this.name = n;
 			this.des = des;
-			this.artist_id = this.name;
+			this.artist_id = Long.toString(this.id_gen++);
 			this.arr_albums = new ArrayList<Album>();
+			this.arr_genre = new ArrayList<Genre>();
+		}
+		
+		/**
+		 * Add genre to the artist
+		 * @param n
+		 */
+		public void addGenre(String n)
+		{
+			this.arr_genre.add(new Genre(n,"",null));
 		}
 		
 		/**
@@ -116,6 +132,12 @@ public class Artist implements Serializable{
 
 		public void setArr_albums(List<Album> arr_albums) {
 			this.arr_albums = arr_albums;
+		}
+		public List<Genre> getArr_genre() {
+			return arr_genre;
+		}
+		public void setArr_genre(List<Genre> arr_genre) {
+			this.arr_genre = arr_genre;
 		}
 		
 		
