@@ -1,9 +1,14 @@
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
 
-public class Genre {
+public class Genre implements Serializable {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	/**
 	 * Name
 	 */
@@ -33,6 +38,11 @@ public class Genre {
 		this.des = d;
 		this.parent_g = parent;
 		this.sub_g = new ArrayList<Genre>();
+	}
+	
+	public Genre()
+	{
+		
 	}
 	
 	/**
