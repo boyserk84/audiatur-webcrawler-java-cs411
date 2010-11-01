@@ -68,7 +68,7 @@ public class Artist implements Serializable{
 		 */
 		public void addGenre(String n)
 		{
-			this.arr_genre.add(new Genre(n,"",null));
+			this.arr_genre.add(new Genre(n,"none",null));
 		}
 		
 		/**

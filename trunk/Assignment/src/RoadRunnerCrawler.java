@@ -31,6 +31,8 @@ public class RoadRunnerCrawler extends Crawler implements Serializable{
 	
 	private final String BASE_URL = "http://www.roadrunnerrecords.com/artists/";	//base URL
 	
+	
+	private DBStorage DB;
 	/**
 	 * Constructor
 	 * @throws IOException 
@@ -39,6 +41,7 @@ public class RoadRunnerCrawler extends Crawler implements Serializable{
 	{
 		arr_artist = new ArrayList<Artist>();
 		arr_url = new ArrayList<String>();
+		DB = new DBStorage();
 		fetchDataFromURL(BASE_URL,0);
 	}
 	
@@ -78,19 +81,38 @@ public class RoadRunnerCrawler extends Crawler implements Serializable{
 	    		// get aritst url
 	    		this.arr_url.add(band_url);
 	    		// get artist name
-	    		this.arr_artist.add(new Artist((band_url.replaceAll("/artists/", "").replace("/", ""))));
+	    		this.arr_artist.add(new Artist(inputLine.substring(inputLine.indexOf("alt=\"")+5,inputLine.indexOf("\" /> <a"))));
+	    		//this.arr_artist.add(new Artist((band_url.replaceAll("/artists/", "").replace("/", ""))));
+	    		
 	    		fetch_data = true;
 	    	}
 	    	
 	    	if (fetch_data==true)
 	    	{
+	    		this.arr_artist.get(arr_artist.size()-1).addGenre("metal");
+	    		//Save type of genre to DB
+	    		//this.DB.addGenreToTable(this.arr_artist.get(this.arr_artist.size()-1).getArr_genre().get(0));
+	    		
+	    		// Save artist's genre to DB
+	    		//this.DB.addRowtoArtistGenreTable(this.arr_artist.get(this.arr_artist.size()-1));
+	    		
 	    		// getting the latest band added in the list and fetch info
-	    		fetchEachArtist(this.arr_url.get(this.arr_url.size()-1),this.arr_artist.get(this.arr_artist.size()-1));
+	    		
+	    		//this.fetchEachArtist(this.arr_url.get(this.arr_url.size()-1),this.arr_artist.get(this.arr_artist.size()-1));
 	    	}
 	    	
 	    	fetch_data = false;
 	    }
 	    in.close();
+	}
+	
+	public void saveToDB()
+	{
+		for (int i = 0; i < this.arr_artist.size(); i++) 
+		{
+			// Store artist info into a DB
+    		this.DB.addRowtoArtistsTable(this.arr_artist.get(i));
+		}
 	}
 	
 	public void printOut()
@@ -125,6 +147,8 @@ public class RoadRunnerCrawler extends Crawler implements Serializable{
 	                            web_connect.getInputStream()));
 	    String album_name = null;
 	    String release_date = null;
+	    String album_url = null;
+	    List<String> album_web = new ArrayList<String>();
 	    while ((inputLine = in.readLine()) != null)
 	    {
 	    	//System.out.println(inputLine);
@@ -133,20 +157,34 @@ public class RoadRunnerCrawler extends Crawler implements Serializable{
 	    	if (inputLine.indexOf("Official Biography")>=0)
 	    	{
 	    		inputLine = in.readLine();
-	    		entry.setDes(inputLine);
-	    		//System.out.println(entry.getName() );
+	    		// Sanitize unwanted description/format
+	    		if (inputLine.matches("<!--[if gte mso 9]><xml> Normal   0 </xml><![endif]--><!--  -->"))
+	    		{
+	    			inputLine = in.readLine();
+	    		}
+	    		entry.setDes(inputLine.replace("<!--[if gte mso 9]><xml> Normal   0 </xml><![endif]--><!--  --><br>", ""));
+	    		//System.out.println(entry.getName() +" "+ entry.getDes() );
 	    	}//if
 	    	
 	    	// fetch the latest album info 
-	    	if (inputLine.matches("<li class=\"latest_album\">"))
+	    	if (inputLine.matches("<div id=\"latest_album_module\" class=\"module gray\">"))
 	    	{
 	    		readUntil(in, "title=\"");
-	    		System.out.println(entry.getName() +"-->" + inputLine);
-	    		album_name = (inputLine.substring(inputLine.indexOf("title=\"")+7,inputLine.indexOf("\" class=\"home_mini\"")));	
-	    		readUntil (in,"Release Date:");
-	    		release_date =  (inputLine.substring(inputLine.indexOf("</strong>")+10,inputLine.indexOf("<br")));
+	    		try {
+	    			album_url = inputLine.substring(inputLine.indexOf(("href=\""))+6,inputLine.indexOf("\" style"));
+
+	    			//System.out.println(entry.getName() +"-->" + inputLine);
+	    			album_name = (inputLine.substring(inputLine.indexOf("title=\"")+7,inputLine.indexOf("\" class=\"home_mini\"")));	
+	    			readUntil (in,"Release Date:");
+	    			release_date =  (inputLine.substring(inputLine.indexOf("</strong>")+10,inputLine.indexOf("<br")));
+	    		} catch (Exception e){
+	    			
+	    		}
+	    		
+	    		//System.out.println(album_url + "dd");
 	    		//entry.addAlbum(album_name,release_date);
 	    	}
+	    	
 	    	
 	    	// If latest album is found, but no discography
 	    	if (inputLine.indexOf("<!-- eof: latest album -->") >=0){
@@ -156,8 +194,17 @@ public class RoadRunnerCrawler extends Crawler implements Serializable{
 	    		inputLine = in.readLine();
 	    		if (inputLine.indexOf("<!-- sof: discography -->")<0)
 	    		{
-	    			entry.addAlbum(album_name,release_date);	
+	    			if (album_name!=null)
+	    			{
+	    				entry.addAlbum(album_name,release_date);
+	    			}
+	    			//System.out.println(album_url);
+	    			album_web.add(album_url);	// Temporary save a list of the album URL
 	    			//System.out.println(entry.getName() + "->no "+ entry.getArr_albums().size());
+	    			
+	    			// Fetch Songs
+		    		this.fetchSongsFromAlbum(album_web.get(album_web.size()-1), entry.getArr_albums().get(entry.getArr_albums().size()-1));
+		    		inputLine = in.readLine();
 	    		}
 	    	}
 	    	
@@ -165,21 +212,123 @@ public class RoadRunnerCrawler extends Crawler implements Serializable{
 	    	if (inputLine.indexOf("discography_list")>=0)
 	    	{
 	    		inputLine = in.readLine();
-	    		inputLine = in.readLine();
+	    		// Fetch album url
+	    		try {
+	    			
+	    			album_url = inputLine.substring(inputLine.indexOf(("href=\""))+6,inputLine.indexOf("\" style"));
+	    			System.out.println(album_url);
+	    			
+	    			album_web.add(album_url); // Temporary save a list of album URLs
+	    			
+	    			inputLine = in.readLine();
+	    			album_name = (inputLine.substring(inputLine.lastIndexOf("\">")+2,inputLine.indexOf("</a>")));
+	    			//album_name = (inputLine.substring(inputLine.indexOf("boldfont\">")));
+	    			//System.out.println(album_name);
+	    			inputLine = in.readLine();
+
+	    			release_date = (inputLine.substring(inputLine.indexOf("</strong>")+10));
+		    		inputLine = in.readLine();
+		    		entry.addAlbum(album_name, release_date);
+		    		
+		    		System.out.println(entry.getName() + "-> "+ entry.getArr_albums().size());
+	    			
+		    		// Save Album info to DB
+		    		//this.DB.addRowtoAlbumsTable(entry.getArr_albums().get(entry.getArr_albums().size()-1));
+		    		// Fetch Songs
+		    		this.fetchSongsFromAlbum(album_web.get(album_web.size()-1), entry.getArr_albums().get(entry.getArr_albums().size()-1));
+		    		
+	    		} catch (Exception e)
+	    		{
+	    			/*while (inputLine.indexOf("<span class=\"boldfont\">")<0) inputLine = in.readLine();
+	    			if (inputLine.indexOf("<span class=\"boldfont\">") >=0){
+	    				album_url = inputLine.substring(inputLine.indexOf(("href=\""))+6,inputLine.lastIndexOf("/a"));
+	    				System.out.println(album_url);
+	    				System.out.println(album_url.substring(0,inputLine.indexOf("\">")));
+	    				album_name = (album_url.substring(inputLine.lastIndexOf("\">"),inputLine.lastIndexOf("<")));
+	    				System.out.println("Catch name :" + album_name);
+	    				album_url = album_url.substring(inputLine.indexOf(("href=\""))+6,inputLine.indexOf("<"));
+	    				System.out.println("catch this " + album_url);
+	    			} */
+	    		}
 	    		
-	    		//entry.addAlbum(inputLine.substring(inputLine.lastIndexOf("\">")+2,inputLine.indexOf("</a>")), date)
-	    		//System.out.println(inputLine.substring(inputLine.lastIndexOf("\">")+2,inputLine.indexOf("</a>")));
-	    		album_name = (inputLine.substring(inputLine.lastIndexOf("\">")+2,inputLine.indexOf("</a>")));
-	    		inputLine = in.readLine();
-	    		entry.addAlbum(album_name, (inputLine.substring(inputLine.indexOf("</strong>")+10)));
-	    		//System.out.println(inputLine.substring(inputLine.indexOf("</strong>")+10));
-	    		//System.out.println(entry.getName() + "-> "+ entry.getArr_albums().size());
 	    		
-	    	} 
+	    	}//if
 	    	
 	    	
 	    }//while
 	    in.close();
+	    
+	    
+	    
+	    // Set Year found
+	    try {
+	    	String year = entry.getArr_albums().get(entry.getArr_albums().size()-1).getRelease_date();
+	    	entry.setYear_found(Integer.parseInt(year.substring(year.lastIndexOf(".")+1)));
+	    } catch (Exception e){
+	    	//Unknown year found
+	    	entry.setYear_found(3000);
+	    }
+	    //this.DB.addRowtoArtistsTable(this.arr_artist.get(this.arr_artist.size()-1));
+	}
+	
+	/**
+	 * get songs from the album
+	 * @param url
+	 * @param entry
+	 * @throws IOException
+	 */
+	public void fetchSongsFromAlbum(String url, Album entry) throws IOException
+	{
+		url = this.BASE_URL.replace("/artists/", url);
+		URL website = new URL(url);
+	    URLConnection web_connect = website.openConnection();
+	    BufferedReader in = new BufferedReader(
+	                            new InputStreamReader(
+	                            web_connect.getInputStream()));
+
+	    String[] arr_song = null;
+	    //System.out.println(url);
+	    while ((inputLine = in.readLine()) != null)
+	    {
+	    	if (inputLine.indexOf("<div id=\"tracklisting\"") >= 0)
+	    	{
+	    		inputLine = in.readLine();
+	    		// Sanitze input
+	    		inputLine = inputLine.replace("<br />", "<br/>");
+	    		inputLine = inputLine.replace("&nbsp;", "");
+	    		
+	    		try {
+	    			inputLine = inputLine.substring(inputLine.indexOf("1")); // set starting index
+	    		} catch (Exception e)
+	    		{
+	    			
+	    		}
+	    		//System.out.println(inputLine);
+	    		arr_song = inputLine.split("<br/>");	// split when see <br/>
+	    		
+	    	}
+	    	
+	    }
+	    in.close();
+		
+	    // Fetch all songs to the album
+	    for (int i = 0; i < arr_song.length; i++) 
+	    {
+	    	if (!(arr_song[i].indexOf("<strong")>=0))
+	    	{
+	    		if (arr_song[i].isEmpty() || arr_song[i]==null)
+	    		{
+	    			entry.addSongToAlbum("Unavailable",0);
+	    		} else {
+	    			entry.addSongToAlbum(arr_song[i], 0);
+	    		}
+	    		// Save Song to DB
+	    		//this.DB.addRowtoSongsTable(entry.getList_of_songs().get(entry.getList_of_songs().size()-1));
+	    		
+	    		//System.out.println(arr_song[i]);
+	    	} else break;
+		}
+	    
 	}
 
 	/**
