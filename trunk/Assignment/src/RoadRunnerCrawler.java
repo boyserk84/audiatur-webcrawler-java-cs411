@@ -1,6 +1,9 @@
+import java.beans.XMLDecoder;
 import java.beans.XMLEncoder;
+import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -41,7 +44,16 @@ public class RoadRunnerCrawler extends Crawler implements Serializable{
 	{
 		arr_artist = new ArrayList<Artist>();
 		arr_url = new ArrayList<String>();
-		DB = new DBStorage();
+		//DB = new DBStorage();			// only used when connect to the db
+		//fetchDataFromURL(BASE_URL,0);
+	}
+	
+	/**
+	 * Run crawler
+	 * @throws IOException
+	 */
+	public void runCrawler() throws IOException
+	{
 		fetchDataFromURL(BASE_URL,0);
 	}
 	
@@ -98,7 +110,7 @@ public class RoadRunnerCrawler extends Crawler implements Serializable{
 	    		
 	    		// getting the latest band added in the list and fetch info
 	    		
-	    		//this.fetchEachArtist(this.arr_url.get(this.arr_url.size()-1),this.arr_artist.get(this.arr_artist.size()-1));
+	    		this.fetchEachArtist(this.arr_url.get(this.arr_url.size()-1),this.arr_artist.get(this.arr_artist.size()-1));
 	    	}
 	    	
 	    	fetch_data = false;
@@ -106,6 +118,9 @@ public class RoadRunnerCrawler extends Crawler implements Serializable{
 	    in.close();
 	}
 	
+	/**
+	 * save artists info to the database
+	 */
 	public void saveToDB()
 	{
 		for (int i = 0; i < this.arr_artist.size(); i++) 
@@ -114,6 +129,17 @@ public class RoadRunnerCrawler extends Crawler implements Serializable{
     		this.DB.addRowtoArtistsTable(this.arr_artist.get(i));
 		}
 	}
+	
+	public void loadXML(String filename) throws Exception
+	{
+		BufferedInputStream stream = new BufferedInputStream(
+                new FileInputStream(filename));
+
+		XMLDecoder d = new XMLDecoder (stream);
+		this.arr_artist = (List<Artist>) d.readObject();
+		d.close();
+	}
+	
 	
 	public void printOut()
 	{
@@ -124,6 +150,55 @@ public class RoadRunnerCrawler extends Crawler implements Serializable{
 			System.out.println(arr_artist.get(i).getArr_albums().size());
 			System.out.println(arr_url.get(i));
 		}
+	}
+	
+	/**
+	 * Print all artists
+	 */
+	public void printListArtist()
+	{
+		for (int i = 0; i < arr_artist.size(); i++) {
+			System.out.println(arr_artist.get(i).getArtist_id() +":"+ arr_artist.get(i).getName() + ":" + arr_artist.get(i).getArr_genre().get(0).getName() + ":" + arr_artist.get(i).getYear_found());
+		}
+	}
+	
+	/**
+	 * Print all albums
+	 */
+	public void printListAlbums()
+	{
+		int count = 0;
+		for (int i = 0; i < arr_artist.size(); i++) 
+		{
+			for (int k = 0; k < arr_artist.get(i).getArr_albums().size(); k++) {
+				System.out.println(arr_artist.get(i).getArr_albums().get(k).getAlbum_name());
+				++count;
+			}
+			
+		}
+		System.out.println("Total of " + count + " albums.");
+	}
+	
+	/**
+	 * Print all songs
+	 */
+	public void printListSongs()
+	{
+		int count = 0;
+		for (int i = 0; i < arr_artist.size(); i++) 
+		{
+			for (int k = 0; k < arr_artist.get(i).getArr_albums().size(); k++) {
+				for (int j = 0; j < arr_artist.get(i).getArr_albums().get(k).getList_of_songs().size(); j++) 
+				{
+					System.out.println(arr_artist.get(i).getArr_albums().get(k).getList_of_songs().get(j).getName());
+					++count;
+				}
+				
+			}
+			
+		}
+		System.out.println("Total of " + count + " songs.");
+		
 	}
 
 	@Override
