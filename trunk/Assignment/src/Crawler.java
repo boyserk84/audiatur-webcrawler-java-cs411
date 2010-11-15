@@ -113,9 +113,18 @@ abstract public class Crawler implements Serializable{
 	 */
 	protected void saveAsXML(List<Artist> list) throws FileNotFoundException
 	{
+		saveAsXML(list,"roadrunner_test.xml");
+	}
+	
+	/**
+	 * Save all fetching entries as XML file
+	 * @throws FileNotFoundException
+	 */
+	protected void saveAsXML(List<Artist> list, String filename) throws FileNotFoundException
+	{
 		XMLEncoder e = new XMLEncoder(
 		                new BufferedOutputStream(
-		                    new FileOutputStream("Roadrunner_test.xml")));
+		                    new FileOutputStream(filename)));
 
 		e.writeObject(list);
 

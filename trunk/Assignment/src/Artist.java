@@ -51,6 +51,15 @@ public class Artist implements Serializable{
 			
 		}
 		
+		/**
+		 * change starting ID
+		 * @param n starting value
+		 */
+		public static void startIDGenwith(long n)
+		{
+			id_gen = n;
+		}
+		
 		@SuppressWarnings("deprecation")
 		public Artist(String n, String des, String date)
 		{
@@ -71,6 +80,7 @@ public class Artist implements Serializable{
 			this.arr_genre.add(new Genre(n,"none",null));
 		}
 		
+		
 		/**
 		 * Add Album to the artist
 		 * @param n album name
@@ -78,6 +88,7 @@ public class Artist implements Serializable{
 		 */
 		public void addAlbum(String n, String date)
 		{
+			//System.out.println(n);
 			this.arr_albums.add(new Album(n,artist_id,date));
 		}
 		/**

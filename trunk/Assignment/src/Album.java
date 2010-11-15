@@ -25,6 +25,7 @@ public class Album implements Serializable {
 	 */
 	public Album(String name, String artist_id, String release_date)
 	{
+		//System.out.println(name);
 		this.artist_id = artist_id;
 		this.album_name = name;
 		this.release_date = release_date;
@@ -45,6 +46,17 @@ public class Album implements Serializable {
 	{
 		list_of_songs.add(new Song(s_n,duration,album_name,artist_id));
 	}
+	
+	/**
+	 * add song to this album
+	 * @param s_n song name
+	 * @param duration duration
+	 */
+	public void addSongToAlbum(String s_n, String duration)
+	{
+		//System.out.println(duration.trim().replace(":", "."));
+		list_of_songs.add(new Song(s_n,Float.valueOf(duration.trim().replace(":",".")),album_name,artist_id));
+	}
 
 	public String getArtist_id() {
 		return artist_id;
@@ -64,8 +76,7 @@ public class Album implements Serializable {
 	public void setAlbum_name(String album_name) {
 		this.album_name = album_name;
 	}
-
-
+	
 	public String getRelease_date() {
 		return release_date;
 	}
