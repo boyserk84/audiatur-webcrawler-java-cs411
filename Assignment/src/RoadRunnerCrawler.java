@@ -157,6 +157,7 @@ public class RoadRunnerCrawler extends Crawler implements Serializable{
 	 */
 	public void printListArtist()
 	{
+		System.out.println("Total Artists: " + arr_artist.size());
 		for (int i = 0; i < arr_artist.size(); i++) {
 			System.out.println(arr_artist.get(i).getArtist_id() +":"+ arr_artist.get(i).getName() + ":" + arr_artist.get(i).getArr_genre().get(0).getName() + ":" + arr_artist.get(i).getYear_found());
 		}
