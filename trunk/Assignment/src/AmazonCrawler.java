@@ -11,6 +11,7 @@ import java.net.URLConnection;
 import java.util.ArrayList;
 import java.util.Hashtable;
 import java.util.List;
+import java.util.StringTokenizer;
 
 
 public class AmazonCrawler extends Crawler implements Serializable{
@@ -22,7 +23,9 @@ public class AmazonCrawler extends Crawler implements Serializable{
 	private static final long serialVersionUID = 1L;
 	private List<Artist> arr_artist;
 	private List<String> arr_URL;
-	private Hashtable<String,String> artist_hash;
+	private List<Artist> temp_artists;
+	private Hashtable<String,Long> artist_hash;
+	private String option_URL = "";
 	
 	private String BASE_URL = "http://www.amazon.com";
 	private String blue_URL = "http://www.amazon.com/Blues-Music/b/ref=amb_link_7154062_12?ie=UTF8&node=31&pf_rd_m=ATVPDKIKX0DER&pf_rd_s=browse&pf_rd_r=0BAKWT3Y49M7JT3W7R8X&pf_rd_t=101&pf_rd_p=1279348062&pf_rd_i=5174";
@@ -44,9 +47,33 @@ public class AmazonCrawler extends Crawler implements Serializable{
 		this.xml_filename = keyword.trim().concat(".xml");
 		arr_artist = new ArrayList<Artist>();
 		arr_URL = new ArrayList<String>();
-		artist_hash = new Hashtable<String,String>();
+		artist_hash = new Hashtable<String,Long>();
+		temp_artists = new ArrayList<Artist>();
 	}
 	
+	/**
+	 * Constructor
+	 * @param keyword keyword, genre
+	 * @param URL specific url
+	 * @throws IOException
+	 */
+	public AmazonCrawler(String keyword, String URL) throws IOException
+	{
+		this(keyword);
+		this.option_URL = URL;
+
+	}
+	
+	public void runCrawlerwithURLoption() throws IOException
+	{
+		this.fetchDataFromURL(option_URL,0);
+		this.fetchAllArtists();
+	}
+	
+	/**
+	 * Run crawler
+	 * @throws IOException
+	 */
 	public void runCrawler() throws IOException
 	{
 		this.fetchDataFromURL(generalPop_URL, 0);
@@ -80,11 +107,16 @@ public class AmazonCrawler extends Crawler implements Serializable{
 	    			String artist = line.substring((line.indexOf(">")+1),(line.indexOf("</a>")));
 	    			
 	    			// If the artist has not been added yet
-	    			if (!this.artist_hash.contains(artist))
+	    			if (!this.artist_hash.containsKey(artist))
 	    			{
-	    				this.artist_hash.put(artist, artist);
+	    				//System.out.println (this.artist_hash.get(artist));
 	    				// Fetch artist information such as genre, artist name and url
 	    				this.arr_artist.add(new Artist(artist));
+	    				
+	    				this.temp_artists.add(this.arr_artist.get(this.arr_artist.size()-1)); // Add to temp list
+	    				
+	    				// Add to hash table
+	    				this.artist_hash.put(artist, Long.parseLong((this.arr_artist.get(this.arr_artist.size()-1).getArtist_id())) );
 	    				
 	    				if (keyword.equals("Blues"))
 		    			{
@@ -122,19 +154,24 @@ public class AmazonCrawler extends Crawler implements Serializable{
 	    	}
 	    }
 	    in.close();
+	    System.out.println("Total artists: " + this.arr_URL.size());
 	}
 	
+	/**
+	 * Fetch all artist info after URLs are gathered by fetchDataFromURL
+	 * @throws IOException
+	 */
 	protected void fetchAllArtists() throws IOException
 	{
 		for (int i = 0; i < this.arr_URL.size(); i++) 
 		{
-			fetchEachArtist(this.arr_URL.get(i), this.arr_artist.get(i));
+			fetchEachArtist(this.arr_URL.get(i), this.temp_artists.get(i));
 		}
 	}
 	
 	protected void fetchEachArtist(String url, Artist artist) throws IOException
 	{
-		System.out.println(url);
+		System.out.println("Fetching: " + url);
 		URL website = new URL(url);
 	    URLConnection web_connect = website.openConnection();
 	    BufferedReader in = new BufferedReader(
@@ -226,6 +263,7 @@ public class AmazonCrawler extends Crawler implements Serializable{
 		    			//System.out.println(run_time);
 	    			
 	    		}
+	    		
 	    		album.addSongToAlbum(song, run_time);
 	    		
 	    	}
@@ -243,24 +281,43 @@ public class AmazonCrawler extends Crawler implements Serializable{
 	}
 	public void saveasXML() throws FileNotFoundException
 	{
-		this.saveAsXML(this.arr_artist,this.xml_filename);
+		// prevent overwritten
+		if (this.arr_artist.size() < this.arr_artist.size() + this.temp_artists.size())
+		{
+			this.saveAsXML(this.arr_artist,this.xml_filename);
+		}
 	}
 	
+	/**
+	 * Load XML file
+	 * @param filename XML file name with extension
+	 * @throws FileNotFoundException
+	 */
 	public void loadXML(String filename) throws FileNotFoundException
 	{
 		BufferedInputStream stream = new BufferedInputStream(
                 new FileInputStream(filename));
-
 		XMLDecoder d = new XMLDecoder (stream);
-		this.arr_artist = (List<Artist>) d.readObject();
+		try {
+			this.arr_artist = (List<Artist>) d.readObject();
+		} catch (Exception e)
+		{
+			System.out.println("Fail to read");
+		}
 		d.close();
 		
 		// Prepare hash mapping
 		for (int i = 0; i < this.arr_artist.size(); i++) 
 		{
-			this.artist_hash.put(this.arr_artist.get(i).getName(),this.arr_artist.get(i).getName());
+			this.artist_hash.put(this.arr_artist.get(i).getName(),Long.parseLong(this.arr_artist.get(i).getArtist_id()));
 		}
-		
+		// Reset artist ID
+		try {
+		Artist.startIDGenwith(Long.parseLong(this.arr_artist.get(this.arr_artist.size()-1).getArtist_id()));
+		} catch (Exception e){
+			// if not successful setting ID, set to 125
+			Artist.startIDGenwith(125);
+		}
 	}
 	
 	public void printOut()
@@ -276,6 +333,14 @@ public class AmazonCrawler extends Crawler implements Serializable{
 			}
 		}
 		
+	}
+	
+	public void printOnlyArtists()
+	{
+		for (int i = 0; i < this.arr_artist.size(); i++) 
+		{
+			System.out.println(this.arr_artist.get(i).getName());
+		}
 	}
 	
 	@Override
