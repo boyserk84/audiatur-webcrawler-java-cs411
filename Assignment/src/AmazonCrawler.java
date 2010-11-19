@@ -24,7 +24,7 @@ public class AmazonCrawler extends Crawler implements Serializable{
 	protected List<Artist> arr_artist;
 	private List<String> arr_URL;
 	private List<Artist> temp_artists;
-	private Hashtable<String,Long> artist_hash;
+	protected Hashtable<String,Long> artist_hash;
 	private String option_URL = "";
 	
 	private String BASE_URL = "http://www.amazon.com";
