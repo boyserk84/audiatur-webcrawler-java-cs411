@@ -55,7 +55,12 @@ public class Album implements Serializable {
 	public void addSongToAlbum(String s_n, String duration)
 	{
 		//System.out.println(duration.trim().replace(":", "."));
-		list_of_songs.add(new Song(s_n,Float.valueOf(duration.trim().replace(":",".")),album_name,artist_id));
+		try {
+			list_of_songs.add(new Song(s_n,Float.valueOf(duration.trim().replace(":",".")),album_name,artist_id));
+		} catch (Exception e){
+			// if n/a
+			list_of_songs.add(new Song(s_n,0,album_name,artist_id));
+		}
 	}
 
 	public String getArtist_id() {
