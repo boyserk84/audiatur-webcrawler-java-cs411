@@ -21,7 +21,7 @@ public class AmazonCrawler extends Crawler implements Serializable{
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	private List<Artist> arr_artist;
+	protected List<Artist> arr_artist;
 	private List<String> arr_URL;
 	private List<Artist> temp_artists;
 	private Hashtable<String,Long> artist_hash;
@@ -42,9 +42,14 @@ public class AmazonCrawler extends Crawler implements Serializable{
 	 */
 	public AmazonCrawler(String keyword)
 	{	
+		this();
 		Artist.startIDGenwith(124);
 		this.keyword = keyword;
 		this.xml_filename = keyword.trim().concat(".xml");
+	}
+	
+	public AmazonCrawler()
+	{
 		arr_artist = new ArrayList<Artist>();
 		arr_URL = new ArrayList<String>();
 		artist_hash = new Hashtable<String,Long>();
@@ -100,10 +105,14 @@ public class AmazonCrawler extends Crawler implements Serializable{
 	    	if (inputLine.indexOf("<span class=\"ptBrand\">by") >= 0)
 	    	{
 	    		String line = inputLine.substring(inputLine.indexOf("by"));
+	    		//System.out.println(line);
 	    		
 	    		if (line.indexOf("<a href") >=0)	// if there is a link
 	    		{
+	    			line = line.substring(line.indexOf("href"));
 	    			String url = line.substring(line.indexOf("href")+6,line.indexOf("\">"));
+
+	    			//System.out.println(" URL is " + url);
 	    			String artist = line.substring((line.indexOf(">")+1),(line.indexOf("</a>")));
 	    			
 	    			// If the artist has not been added yet
@@ -148,6 +157,30 @@ public class AmazonCrawler extends Crawler implements Serializable{
 		    				this.arr_artist.get(this.arr_artist.size()-1).addGenre(this.keyword);
 			    			this.arr_artist.get(this.arr_artist.size()-1).addGenre("Pop");
 		    			}
+		    			if (keyword.equals("Easy Listening"))
+		    			{
+		    				this.arr_artist.get(this.arr_artist.size()-1).addGenre(this.keyword);
+			    			this.arr_artist.get(this.arr_artist.size()-1).addGenre("Pop");
+		    			}
+		    			if (keyword.equals("Adult Alternative"))
+		    			{
+		    				this.arr_artist.get(this.arr_artist.size()-1).addGenre(this.keyword);
+			    			this.arr_artist.get(this.arr_artist.size()-1).addGenre("Pop");
+			    			this.arr_artist.get(this.arr_artist.size()-1).addGenre("Alternative");
+		    			}
+		    			if (keyword.equals("Christian Hiphop"))
+		    			{
+		    				this.arr_artist.get(this.arr_artist.size()-1).addGenre(this.keyword);
+			    			this.arr_artist.get(this.arr_artist.size()-1).addGenre("Hiphop");
+			    			this.arr_artist.get(this.arr_artist.size()-1).addGenre("Rap");
+		    			}
+		    			if (keyword.equals("Gangsta Hardcore"))
+		    			{
+		    				this.arr_artist.get(this.arr_artist.size()-1).addGenre(this.keyword);
+			    			this.arr_artist.get(this.arr_artist.size()-1).addGenre("Hiphop");
+			    			this.arr_artist.get(this.arr_artist.size()-1).addGenre("Rap");
+		    			}
+		    			
 		    			this.arr_URL.add(this.BASE_URL+url);
 	    			}
 	    		}
@@ -282,10 +315,11 @@ public class AmazonCrawler extends Crawler implements Serializable{
 	public void saveasXML() throws FileNotFoundException
 	{
 		// prevent overwritten
-		if (this.arr_artist.size() < this.arr_artist.size() + this.temp_artists.size())
+		if (this.temp_artists.size() > 0)
 		{
+			//this.arr_artist.addAll(this.temp_artists);
 			this.saveAsXML(this.arr_artist,this.xml_filename);
-		}
+		} 
 	}
 	
 	/**
@@ -306,6 +340,7 @@ public class AmazonCrawler extends Crawler implements Serializable{
 		}
 		d.close();
 		
+		this.xml_filename = filename;
 		// Prepare hash mapping
 		for (int i = 0; i < this.arr_artist.size(); i++) 
 		{
@@ -313,7 +348,7 @@ public class AmazonCrawler extends Crawler implements Serializable{
 		}
 		// Reset artist ID
 		try {
-		Artist.startIDGenwith(Long.parseLong(this.arr_artist.get(this.arr_artist.size()-1).getArtist_id()));
+			Artist.startIDGenwith(Long.parseLong(this.arr_artist.get(this.arr_artist.size()-1).getArtist_id()));
 		} catch (Exception e){
 			// if not successful setting ID, set to 125
 			Artist.startIDGenwith(125);
@@ -337,9 +372,10 @@ public class AmazonCrawler extends Crawler implements Serializable{
 	
 	public void printOnlyArtists()
 	{
+		System.out.println("Total Artists: " + arr_artist.size());
 		for (int i = 0; i < this.arr_artist.size(); i++) 
 		{
-			System.out.println(this.arr_artist.get(i).getName());
+			System.out.println(this.arr_artist.get(i).getArtist_id() + ":" + this.arr_artist.get(i).getName());
 		}
 	}
 	

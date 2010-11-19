@@ -24,9 +24,9 @@ public class RoadRunnerCrawlerTest extends TestCase{
 	{
 		RoadRunnerCrawler test = new RoadRunnerCrawler();
 		test.loadXML("Roadrunner_data.xml");
-		//test.printListArtist();
+		test.printListArtist();
 		//test.printListAlbums();
-		test.printListSongs();
+		//test.printListSongs();
 	}
 	
 
