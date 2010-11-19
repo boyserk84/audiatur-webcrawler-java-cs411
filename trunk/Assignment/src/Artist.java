@@ -80,6 +80,15 @@ public class Artist implements Serializable{
 			this.arr_genre.add(new Genre(n,"none",null));
 		}
 		
+		/**
+		 * Add list of genres
+		 * @param g
+		 */
+		public void addListOfGenre(List<Genre> g)
+		{
+			this.arr_genre.addAll(g);
+		}
+		
 		
 		/**
 		 * Add Album to the artist
@@ -91,6 +100,25 @@ public class Artist implements Serializable{
 			//System.out.println(n);
 			this.arr_albums.add(new Album(n,artist_id,date));
 		}
+		
+		/**
+		 * Add album to the artist
+		 * @param n album object
+		 */
+		public void addAlbum(Album n)
+		{
+			this.arr_albums.add(n);
+		}
+		
+		/**
+		 * Add a list of albums to this artist
+		 * @param arr list of albums
+		 */
+		public void addListofAlbum(List<Album> arr)
+		{
+			this.arr_albums.addAll(arr);
+		}
+		
 		/**
 		 * 
 		 * @param date
@@ -135,6 +163,25 @@ public class Artist implements Serializable{
 
 		public void setArtist_id(String artist_id) {
 			this.artist_id = artist_id;
+
+		}
+		
+		/**
+		 * completely change artist's ID 
+		 * @param artist_id
+		 */
+		public void resetIdTo(String artist_id)
+		{
+			this.artist_id = artist_id;
+			for(int i =0; i < this.arr_albums.size(); ++i)
+			{
+				this.arr_albums.get(i).setArtist_id(artist_id);	// change album's artist ID
+				
+				for (int j=0; j < this.arr_albums.get(i).getList_of_songs().size(); ++j) // change song's artist ID
+				{
+					this.arr_albums.get(i).getList_of_songs().get(j).setArtist_id(artist_id);
+				}
+			}
 		}
 
 		public List<Album> getArr_albums() {
