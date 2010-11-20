@@ -16,8 +16,21 @@ public class MergeXMLTest extends TestCase{
 		List<String> xml_files = new ArrayList<String>();
 		xml_files.add("Roadrunner_data.xml");
 		xml_files.add("contemporary_blues.xml");
+		xml_files.add("Hiphop.xml");
+		xml_files.add("General Pop.xml");
+		xml_files.add("Metal.xml");
+		xml_files.add("Classic_Rock.xml");
+		xml_files.add("Funk.xml");
+		xml_files.add("NeoSoul.xml");
+		xml_files.add("Power Pop.xml");
+		xml_files.add("Soft_Rock.xml");
+		xml_files.add("Rap_Rock.xml");
+		xml_files.add("Jamaican Ska.xml");
+		xml_files.add("Dance Pop.xml");
 		
 		MergeXML test = new MergeXML(xml_files);
 		test.printOnlyArtists();
+		
+		//test.saveasXMLFile("audiatur_list.xml");
 	}
 }

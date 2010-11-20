@@ -32,10 +32,22 @@ public class MergeXML extends AmazonCrawler{
 		files = f;
 		this.loadXML(files.get(0)); // only for first xml file only
 		
-		this.temp_artists = loadXMLwithMergeOption(files.get(1));
+		for (int i = 1; i < f.size(); i++) 
+		{
+			mergeData(i);
+		}
+		this.saveasXMLFile("audiatur.xml");
 		
-		int duplicate_counter = 0;
+	}
+
+	/**
+	 * Merge data
+	 * @param xml_index index of file in the list
+	 * @throws FileNotFoundException 
+	 */
+	private void mergeData(int xml_index) throws FileNotFoundException {
 		
+		this.temp_artists = loadXMLwithMergeOption(files.get(xml_index));
 		// for each artist from the XML file
 		for (int i=0; i < this.temp_artists.size(); ++i)
 		{
@@ -60,24 +72,20 @@ public class MergeXML extends AmazonCrawler{
 					this.arr_artist.get(Integer.parseInt(artist_index)).addListOfGenre(temp_artists.get(i).getArr_genre());
 				}
 				System.out.println("Duplicate Found on "+ this.temp_artists.get(i).getName() +":ID = "+ artist_index);
-				++duplicate_counter;			
+		
 			} else {
 				// if not duplicate add into a hash and change artist ID
 
 				// modify artist ID to the latest counter number
-				temp_artists.get(i).resetIdTo(Integer.toString(this.arr_artist.size()+i+1-duplicate_counter));
+				temp_artists.get(i).resetIdTo(Integer.toString(this.arr_artist.size()+((i==0)?i+1:1)));
 				
 				// put key and value into a hash table
 				this.artist_hash.put(temp_artists.get(i).getName(), Long.parseLong(temp_artists.get(i).getArtist_id()));
 				
 				// add this artist to the artist list
 				this.arr_artist.add(temp_artists.get(i));
-				duplicate_counter = 0;
-			}
-
-					
-		}
-
+			}		
+		}//for
 	}
 	
 	/**
@@ -100,16 +108,6 @@ public class MergeXML extends AmazonCrawler{
 		d.close();
 		
 		return temp_arr;
-		
-		
 	}
 	
-	
-	public void runMerge()
-	{
-		for (int i =0; i < files.size(); ++i)
-		{
-			files.get(i);
-		}
-	}
 }

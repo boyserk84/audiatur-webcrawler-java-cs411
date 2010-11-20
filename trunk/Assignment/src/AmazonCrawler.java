@@ -69,6 +69,10 @@ public class AmazonCrawler extends Crawler implements Serializable{
 
 	}
 	
+	/**
+	 * Run crawler with URL option
+	 * @throws IOException
+	 */
 	public void runCrawlerwithURLoption() throws IOException
 	{
 		this.fetchDataFromURL(option_URL,0);
@@ -137,7 +141,7 @@ public class AmazonCrawler extends Crawler implements Serializable{
 		    				this.arr_artist.get(this.arr_artist.size()-1).addGenre(this.keyword);
 			    			this.arr_artist.get(this.arr_artist.size()-1).addGenre("General HipHop");
 		    			}
-		    			if (keyword.equals("Jamaican Ska"))
+		    			if (keyword.equals("Jamaican Ska") || keyword.equals("Rocksteady"))
 		    			{
 		    				this.arr_artist.get(this.arr_artist.size()-1).addGenre(this.keyword);
 			    			this.arr_artist.get(this.arr_artist.size()-1).addGenre("Reggae");
@@ -179,6 +183,41 @@ public class AmazonCrawler extends Crawler implements Serializable{
 		    				this.arr_artist.get(this.arr_artist.size()-1).addGenre(this.keyword);
 			    			this.arr_artist.get(this.arr_artist.size()-1).addGenre("Hiphop");
 			    			this.arr_artist.get(this.arr_artist.size()-1).addGenre("Rap");
+		    			}
+		    			if (keyword.equals("Funk") || keyword.equals("NeoSoul") || keyword.equals("R&B")
+		    					|| keyword.equals("Contemporary R&B") || keyword.equals("NewJack"))
+		    			{
+		    				this.arr_artist.get(this.arr_artist.size()-1).addGenre(this.keyword);
+			    			this.arr_artist.get(this.arr_artist.size()-1).addGenre("R&B");
+		    			}
+		    			if (keyword.equals("Psychedelic Rock") || keyword.equals("Southern Rock") || keyword.equals("Glam")
+		    					|| keyword.equals("British Invasion") || keyword.equals("Arena Rock"))
+		    			{
+		    				this.arr_artist.get(this.arr_artist.size()-1).addGenre(this.keyword);
+			    			this.arr_artist.get(this.arr_artist.size()-1).addGenre("Rock");
+			    			this.arr_artist.get(this.arr_artist.size()-1).addGenre("Classic Rock");
+		    			}
+		    			if (keyword.equals("Soft Rock"))
+		    			{
+		    				this.arr_artist.get(this.arr_artist.size()-1).addGenre(this.keyword);
+			    			this.arr_artist.get(this.arr_artist.size()-1).addGenre("Rock");
+			    			this.arr_artist.get(this.arr_artist.size()-1).addGenre("Pop");
+		    			}
+		    			if (keyword.equals("Rap Rock"))
+		    			{
+		    				this.arr_artist.get(this.arr_artist.size()-1).addGenre(this.keyword);
+			    			this.arr_artist.get(this.arr_artist.size()-1).addGenre("Rock");
+			    			this.arr_artist.get(this.arr_artist.size()-1).addGenre("Rap");
+		    			}
+		    			if (keyword.equals("Alternative Metal"))
+		    			{
+		    				this.arr_artist.get(this.arr_artist.size()-1).addGenre(this.keyword);
+		    				this.arr_artist.get(this.arr_artist.size()-1).addGenre("Metal");
+		    			}
+		    			if (keyword.equals("Trash"))
+		    			{
+		    				this.arr_artist.get(this.arr_artist.size()-1).addGenre(this.keyword);
+		    				this.arr_artist.get(this.arr_artist.size()-1).addGenre("Speed Metal");
 		    			}
 		    			
 		    			this.arr_URL.add(this.BASE_URL+url);
@@ -312,6 +351,10 @@ public class AmazonCrawler extends Crawler implements Serializable{
 	    in.close();
 
 	}
+	/**
+	 * Save as XML file (default file name, which is your keyword.)
+	 * @throws FileNotFoundException
+	 */
 	public void saveasXML() throws FileNotFoundException
 	{
 		// prevent overwritten
@@ -320,6 +363,18 @@ public class AmazonCrawler extends Crawler implements Serializable{
 			//this.arr_artist.addAll(this.temp_artists);
 			this.saveAsXML(this.arr_artist,this.xml_filename);
 		} 
+	}
+	
+	/**
+	 * Save as XML file with desired file name
+	 * @param filename
+	 * @throws FileNotFoundException
+	 */
+	public void saveasXMLFile(String filename) throws FileNotFoundException
+	{
+		//System.out.println(filename);
+		this.xml_filename = filename;
+		saveasXML();
 	}
 	
 	/**
