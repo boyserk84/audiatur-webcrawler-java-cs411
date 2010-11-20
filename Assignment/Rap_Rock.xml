@@ -1,0 +1,4880 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<java version="1.6.0_20" class="java.beans.XMLDecoder"> 
+ <object class="java.util.ArrayList"> 
+  <void method="add"> 
+   <object class="Artist"> 
+    <void property="arr_albums"> 
+     <object class="java.util.ArrayList"> 
+      <void method="add"> 
+       <object class="Album"> 
+        <void property="album_name"> 
+         <string>Born Free</string> 
+        </void> 
+        <void property="artist_id"> 
+         <string>124</string> 
+        </void> 
+        <void property="list_of_songs"> 
+         <object class="java.util.ArrayList"/> 
+        </void> 
+        <void property="release_date"> 
+         <string>2010</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="Album"> 
+        <void property="album_name"> 
+         <string>Rock n Roll Jesus</string> 
+        </void> 
+        <void property="artist_id"> 
+         <string>124</string> 
+        </void> 
+        <void property="list_of_songs"> 
+         <object class="java.util.ArrayList"> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Rock n Roll Jesus</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>124</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.29</float> 
+            </void> 
+            <void property="name"> 
+             <string>Rock N Roll Jesus [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Rock n Roll Jesus</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>124</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.4</float> 
+            </void> 
+            <void property="name"> 
+             <string>Amen [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Rock n Roll Jesus</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>124</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.57</float> 
+            </void> 
+            <void property="name"> 
+             <string>All Summer Long [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Rock n Roll Jesus</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>124</string> 
+            </void> 
+            <void property="duration"> 
+             <float>6.12</float> 
+            </void> 
+            <void property="name"> 
+             <string>Roll On [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Rock n Roll Jesus</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>124</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.06</float> 
+            </void> 
+            <void property="name"> 
+             <string>So Hott [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Rock n Roll Jesus</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>124</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.44</float> 
+            </void> 
+            <void property="name"> 
+             <string>Sugar [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Rock n Roll Jesus</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>124</string> 
+            </void> 
+            <void property="duration"> 
+             <float>5.4</float> 
+            </void> 
+            <void property="name"> 
+             <string>When U Love Someone [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Rock n Roll Jesus</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>124</string> 
+            </void> 
+            <void property="duration"> 
+             <float>6.36</float> 
+            </void> 
+            <void property="name"> 
+             <string>New Orleans [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Rock n Roll Jesus</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>124</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.21</float> 
+            </void> 
+            <void property="name"> 
+             <string>Don&apos;t Tell Me U Love Me [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Rock n Roll Jesus</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>124</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.35</float> 
+            </void> 
+            <void property="name"> 
+             <string>Blue Jeans And A Rosary [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Rock n Roll Jesus</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>124</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.45</float> 
+            </void> 
+            <void property="name"> 
+             <string>Half Your Age [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Rock n Roll Jesus</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>124</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.04</float> 
+            </void> 
+            <void property="name"> 
+             <string>Lowlife (Living The Highlife) [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+         </object> 
+        </void> 
+        <void property="release_date"> 
+         <string>2007</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="Album"> 
+        <void property="album_name"> 
+         <string>Devil Without a Cause</string> 
+        </void> 
+        <void property="artist_id"> 
+         <string>124</string> 
+        </void> 
+        <void property="list_of_songs"> 
+         <object class="java.util.ArrayList"/> 
+        </void> 
+        <void property="release_date"> 
+         <string>August 18, 1998</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="Album"> 
+        <void property="album_name"> 
+         <string>Cocky</string> 
+        </void> 
+        <void property="artist_id"> 
+         <string>124</string> 
+        </void> 
+        <void property="list_of_songs"> 
+         <object class="java.util.ArrayList"/> 
+        </void> 
+        <void property="release_date"> 
+         <string></string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="Album"> 
+        <void property="album_name"> 
+         <string>Kid Rock</string> 
+        </void> 
+        <void property="artist_id"> 
+         <string>124</string> 
+        </void> 
+        <void property="list_of_songs"> 
+         <object class="java.util.ArrayList"/> 
+        </void> 
+        <void property="release_date"> 
+         <string>2003</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="Album"> 
+        <void property="album_name"> 
+         <string>Live Trucker</string> 
+        </void> 
+        <void property="artist_id"> 
+         <string>124</string> 
+        </void> 
+        <void property="list_of_songs"> 
+         <object class="java.util.ArrayList"/> 
+        </void> 
+        <void property="release_date"> 
+         <string>2006</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="Album"> 
+        <void property="album_name"> 
+         <string>History of Rock</string> 
+        </void> 
+        <void property="artist_id"> 
+         <string>124</string> 
+        </void> 
+        <void property="list_of_songs"> 
+         <object class="java.util.ArrayList"/> 
+        </void> 
+        <void property="release_date"> 
+         <string>May 30, 2000</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="Album"> 
+        <void property="album_name"> 
+         <string>Picture</string> 
+        </void> 
+        <void property="artist_id"> 
+         <string>124</string> 
+        </void> 
+        <void property="list_of_songs"> 
+         <object class="java.util.ArrayList"/> 
+        </void> 
+        <void property="release_date"> 
+         <string>November 12, 2002</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="Album"> 
+        <void property="album_name"> 
+         <string>Grits Sandwiches for Breakfast</string> 
+        </void> 
+        <void property="artist_id"> 
+         <string>124</string> 
+        </void> 
+        <void property="list_of_songs"> 
+         <object class="java.util.ArrayList"> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Grits Sandwiches for Breakfast</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>124</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.2</float> 
+            </void> 
+            <void property="name"> 
+             <string>Yo-Da-Lin In The Valley</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Grits Sandwiches for Breakfast</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>124</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.41</float> 
+            </void> 
+            <void property="name"> 
+             <string>Genuine Article</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Grits Sandwiches for Breakfast</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>124</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.18</float> 
+            </void> 
+            <void property="name"> 
+             <string>Cramp Ya Style</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Grits Sandwiches for Breakfast</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>124</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.27</float> 
+            </void> 
+            <void property="name"> 
+             <string>New York&apos;s Not My Home</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Grits Sandwiches for Breakfast</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>124</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.37</float> 
+            </void> 
+            <void property="name"> 
+             <string>Super Rhyme Maker</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Grits Sandwiches for Breakfast</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>124</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.37</float> 
+            </void> 
+            <void property="name"> 
+             <string>With A One-Two</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Grits Sandwiches for Breakfast</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>124</string> 
+            </void> 
+            <void property="duration"> 
+             <float>5.2</float> 
+            </void> 
+            <void property="name"> 
+             <string>Wax The Booty</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Grits Sandwiches for Breakfast</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>124</string> 
+            </void> 
+            <void property="duration"> 
+             <float>5.1</float> 
+            </void> 
+            <void property="name"> 
+             <string>Pimp Of The Nation</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Grits Sandwiches for Breakfast</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>124</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.28</float> 
+            </void> 
+            <void property="name"> 
+             <string>Abdul Jabar Cut</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Grits Sandwiches for Breakfast</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>124</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.24</float> 
+            </void> 
+            <void property="name"> 
+             <string>Step In Stride</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Grits Sandwiches for Breakfast</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>124</string> 
+            </void> 
+            <void property="duration"> 
+             <float>5.04</float> 
+            </void> 
+            <void property="name"> 
+             <string>The Upside</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Grits Sandwiches for Breakfast</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>124</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.21</float> 
+            </void> 
+            <void property="name"> 
+             <string>Style Of X-Pression</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Grits Sandwiches for Breakfast</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>124</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.09</float> 
+            </void> 
+            <void property="name"> 
+             <string>Trippin&apos; Over A Rock</string> 
+            </void> 
+           </object> 
+          </void> 
+         </object> 
+        </void> 
+        <void property="release_date"> 
+         <string></string> 
+        </void> 
+       </object> 
+      </void> 
+     </object> 
+    </void> 
+    <void property="arr_genre"> 
+     <object class="java.util.ArrayList"> 
+      <void method="add"> 
+       <object class="Genre"> 
+        <void property="des"> 
+         <string>none</string> 
+        </void> 
+        <void property="name"> 
+         <string>Rap Rock</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="Genre"> 
+        <void property="des"> 
+         <string>none</string> 
+        </void> 
+        <void property="name"> 
+         <string>Rock</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="Genre"> 
+        <void property="des"> 
+         <string>none</string> 
+        </void> 
+        <void property="name"> 
+         <string>Rap</string> 
+        </void> 
+       </object> 
+      </void> 
+     </object> 
+    </void> 
+    <void property="artist_id"> 
+     <string>124</string> 
+    </void> 
+    <void property="des"> 
+     <string>&lt;p&gt;Rock N Roll Jesus is Kid Rock&amp;#8217;s most honest, eclectic, and soulful record to date.  It&amp;#8217;s his State of the Union address, a deeply personal statement that looks at racism in America, empathizes with soldiers in Iraq (Rock visited the troops last Christmas) and also lays bare his tormented relationship with Pam Anderson.  During their breakup, Rock assumed a low profile, focusing on his music for the first time in years.  Initially, he teamed up with producer Rick Rubin, who gave him a much-needed jolt of confidence.  &amp;#8220;I told him, &amp;#8216;there are no classic American rockers right now, none,&amp;#8217;&amp;#8221; says Rubin.  &amp;#8220;&amp;#8217;You can fill that gap.  There&amp;#8217;s no competition, just get in there and do it.&amp;#8217;&amp;#8221;  Rubin also encouraged Rock to step up his lyrics.  &amp;#8220;I said, &amp;#8216;Don&amp;#8217;t say your name in every song.  You already covered all that &amp;#8220;I&amp;#8217;m Kid Rock, suck my dick, let&amp;#8217;s get drunk&amp;#8221; shit.&amp;#8217;&amp;#8221;  Rock immediately wrote what he considers his best song ever, &amp;#8220;Amen,&amp;#8221; in which he points his middle finger at &amp;#8220;scumbag lawyers and wolves-in-sheep&amp;#8217;s-clothing pastors.&amp;#8221;  &amp;#8220;When I played that for Rick, I was like, &amp;#8216;How about this motherfucker?&amp;#8217;&amp;#8221; Rock says.  &amp;#8220;He said, &amp;#8216;You fuckin&amp;#8217; nailed it!&amp;#8221;&lt;/p&gt;&lt;p&gt;By February, when Rock had recovered from the hangover of his divorce, he teamed up with another producer, Rob Cavallo (best known for Green Day&amp;#8217;s American Idiot), back in Rock&amp;#8217;s Michigan studio.  &amp;#8220;From there, I could do no wrong,&amp;#8221; he says.  &amp;#8220;I was just on fire.&amp;#8221;  Without sounding forced or contrived, the songs on Rock N Roll Jesus glide through Rock&amp;#8217;s favorite musical genres:  country, rock, punk, and hip-hop.  &amp;#8220;All Summer Long&amp;#8221; is as evocative of an adolescent romance in Michigan as Bob Seger&amp;#8217;s &amp;#8220;Night Moves.&amp;#8221;  Cuts like &amp;#8220;New Orleans&amp;#8221; and &amp;#8220;Don&amp;#8217;t Tell Me U Love Me&amp;#8221; draw on the classic rock and country he heard at his parents&amp;#8217; parties.  Rock uses his trademark lyrical boasts sparingly, saving up for lines like &amp;#8220;I fuck hot pussy until it&amp;#8217;s cold&amp;#8221; and &amp;#8220;I take strippers out to breakfast.&amp;#8221;&lt;/p&gt;&lt;p&gt;It helps that Rock is filthy rich, having sold more than 20 million records on top of lucrative touring and merchandising revenues.  He owns a house in Malibu, a three-story condo in West Nashville, and a thirty-acre spread in the Detroit suburb of Clarkston, Michigan, which is home base for Rock&amp;#8217;s fourteen-year-old son, Bobby Junior.  The place is like a rock-and-roll theme park, featuring dirt bike and go-cart tracks, basketball and tennis courts, recording studios, a man-made lake and two swimming pools.  The property&amp;#8217;s many garages house custom motorcycles and a Dukes of Hazzard golf cart, as well as Rock&amp;#8217;s limited-edition Ford GT race car, and his latest indulgence, a white V16 1930 Cadillac gem that cost more than half a mil.&lt;/p&gt;&lt;p&gt;Whatever you want to call him &amp;#8211; Rock &amp;amp; Roll Jesus, the Detroit Cowboy, American Badass, the Early Morning Stoned Pimp, or just plain Bobby, as he&amp;#8217;s known to his friends and family &amp;#8211; Robert James Ritchie was born on Superbowl Sunday 1971.  &amp;#8220;He came in two ounces shy of ten pounds out of his hundred-pound mama,&amp;#8221; says his dad, Bill Ritchie, on the deck of his lakefront Michigan home.  &amp;#8220;He wanted to be a big deal right from the get-go.&amp;#8221;  Financially speaking, Bill Ritchie was a big deal himself, the overlord of two Lincoln-Mercury dealerships, and a tour of Kid Rock&amp;#8217;s childhood home in the town of Romeo debunks any lingering myths that he grew up in a double-wide.&lt;/p&gt;&lt;p&gt;In his Mercury SUV, Bill and I ride from the lake to the 8,000-square-foot home, which is painted white and sits on a hill overlooking a pool and tennis court on land that was formerly an apple orchard.  Bobby was the third of four children:  older sister Carol handles Rock&amp;#8217;s books; his straight-laced younger sister, Jill, is an actress (she played Charisma in Herbie Fully Loaded) who lives in Los Angeles; Rock&amp;#8217;s older brother, Billy, who lost his right leg at age six in a tractor accident, has struggled with drug addictions and is now studying to be a yoga instructor.  As a child, despite his injury, Billy played football and was a competitive skier.  Local TV news channels documented Billy&amp;#8217;s struggle, and a full-page article on him appeared in the Detroit News.  &amp;#8220;All the attention was always on my brother,&amp;#8221; says Rock.  &amp;#8220;He&amp;#8217;d be on That&amp;#8217;s Incredible! &amp;#8211; because he was incredible.  But that&amp;#8217;s why I&amp;#8217;m such a show-off.&amp;#8221;&lt;/p&gt;&lt;p&gt;Bill Ritchie leads me to a barn next to the house, where he and his wife, Susan, Rock&amp;#8217;s mom, used to throw parties every Friday night.  &amp;#8220;This is a big part of Bob&amp;#8217;s history,&amp;#8221; he says.  Ritchie &amp;#8211; who sometimes refers to himself as Daddy Rock &amp;#8211; is a dominating presence with a wicked sense of humor.  At one point during the conversation, he took a leak off the side of the porch.  Ritchie doesn&amp;#8217;t look much like his son, but the two obviously have a lot in common &amp;#8211; including a predilection for partying.  &amp;#8220;The apple doesn&amp;#8217;t fall too far from the tree,&amp;#8221; says Mrs. Ritchie, pointing at her husband of forty-three years.&lt;/p&gt;&lt;p&gt;&amp;#8220;I was one of those guys that worked sixty, seventy hours a week, and when Friday came, we let loose,&amp;#8221; says Bill.  &amp;#8220;I built this party room and I was the disc jockey, and I&amp;#8217;d blast Sixties rock &amp;amp; roll.  I&amp;#8217;d blast heavy country-western:  Johnny Cash, Waylon, Hank Jr., Merle Haggard.  I blasted the shit out of it!&amp;#8221;  If the neighbors complained about the noise, Rock&amp;#8217;s dad would tell them, &amp;#8220;You&amp;#8217;re not supposed to sleep!  Get up and come to the party!&amp;#8221;  The barn also became a venue for Rock&amp;#8217;s first performances, when he was about six.  &amp;#8220;He stood there,&amp;#8221; his dad says proudly, pointing to the top of the bar,  &amp;#8220;with his little cowboy boots on and a fake guitar, singing &amp;#8216;Bad, Bad Leroy Brown.&amp;#8217;&amp;#8221;&lt;/p&gt;&lt;p&gt;When Rock was a kid, his father put him to work, planting trees around their property and mowing their massive lawn.  For spending cash, Rock would gather apples in a nearby orchard for thirty-five cents a bushel.  His father&amp;#8217;s favorite mantra is &amp;#8220;any idiot can earn a dollar, it takes a genius to spend a penny,&amp;#8221; but Rock resented his father&amp;#8217;s tightfisted grip on the family finances.  To this day, nothing pleases Rock more than to wind up his father with tales of exorbitant purchases, like the massive Civil War cannon that greets visitors at Rock&amp;#8217;s Clarkson estate.  &amp;#8220;I told my dad that the guy wanted $70,000 for it, but he was such a cool motherfucker, I gave him seventy-five,&amp;#8221; Rock says.  That kind of business sense makes his father &amp;#8220;screw into the ceiling.&amp;#8221;&lt;/p&gt;&lt;p&gt;When the break-dancing phenomenon swept the country in the early Eighties, Rock hopped on the wave.  After he saw the Fat Boys perform on late-night TV, hip-hop became his obsession.  &amp;#8220;I would sit there scratching records all day long,&amp;#8221; he remembers.  Before he was old enough to drive, Rock had become a hit novelty act.  &amp;#8220;It was unheard of:  a white guy DJ&amp;#8217;ing like a black guy, and having the pizzazz to rock a black party,&amp;#8221; says Rock&amp;#8217;s old friend Chris Pouncy, who offered Rock the opportunity to DJ at basement parties in the mostly black working-class suburb of Mount Clemens, Michigan.  &amp;#8220;It was almost like a freak show at first.&amp;#8221;&lt;/p&gt;&lt;p&gt;&amp;#8220;That&amp;#8217;s when everything started,&amp;#8221; Rock says.  &amp;#8220;A crew full of black kids would come pick me up and take me to Mount Clemens.&amp;#8221;  Says Pouncy, &amp;#8220;That was our first encounter with a mansion.  We were like &amp;#8216;Man, you rich!&amp;#8217;&amp;#8221;&lt;/p&gt;&lt;p&gt;Rock ran away from home several times during high school, often spending weeks at a time with friends in the Mount Clemens projects.  &amp;#8220;I must have been fifteen, and shit would just hit the fan,&amp;#8221; he says.  &amp;#8220;My parents just didn&amp;#8217;t understand what I did.  I wanted to be where the action was.  I didn&amp;#8217;t want to be at home, picking apples in the orchard, I wanted to sell dope on the streets, make my money and go buy Paid In Full so I could spin it at a basement party that weekend.&amp;#8221;  (Rock didn&amp;#8217;t cut all ties with his family during this time &amp;#8211; his mom remembers picking him up from the projects to take him to the orthodontist.)&lt;/p&gt;&lt;p&gt;Rock says he was the only white kid in an all-black neighborhood.  Cops would ask if he was lost or if he needed a ride home, but rock would respond, &amp;#8220;No, I live up here.&amp;#8221;  The one time he got hassled by some kids on the street, he retreated to his friend Flo&amp;#8217;s mother&amp;#8217;s house.  &amp;#8220;Mrs. Flo had no teeth and she was drinking Colt 45 out of a fruit jar,&amp;#8221; Rock recalls.  &amp;#8220;I told her what happened and I told her not to make a big deal out of it, but she grabbed her gun, ran outside and screamed, &amp;#8216;who fuckin&amp;#8217; wit da white boy?!&amp;#8217;&amp;#8221;&lt;/p&gt;&lt;p&gt;After barely graduating from Romeo High School, Rock moved back to the Detroit ghetto for the next ten years, sleeping on friends&amp;#8217; couches in the Colchester projects, in Pouncy&amp;#8217;s basement and in Gross Point Park, on the run-down corner of Jefferson Avenue and St. Claire Street.  He worked at a car wash, slung crack, and earned extra scratch through his DJ gigs.  To growing acclaim, but no big payoffs, Rock released three records, Grits Sandwiches For Breakfast (1990), The Polyfuze Method (1993), and Early Morning Stoned Pimp (1996). Though his name was worthless outside Detroit, and the Vanilla Ice-inspired revolt against white dudes in rap was in full effect, Rock says he was making progress, winning DJ battles and rap contests, upping his profile.  His father encouraged him to sideline his musical aspirations and take over one of the family&amp;#8217;s car dealerships, but Kid rebuffed him.  &amp;#8220;I knew that making it on my own terms, and having my dad be proud of me, would be the ultimate freedom,&amp;#8221; he says.&lt;/p&gt;&lt;p&gt;Rock&amp;#8217;s mom helped raise Junior, and she brought food down to the White Room studio, in the heart of downtown Detroit, while Rock and his band began slogging away on his Atlantic debut, Devil Without A Cause.  With huge hits like &amp;#8220;Bawitdaba,&amp;#8221; &amp;#8220;Cowboy,&amp;#8221; and &amp;#8220;Only God Knows Why&amp;#8221; (which he wrote in jail after a bar fight, on the same day he signed to Atlantic), the album would eventually sell 12 million copies.  When he was signed to Atlantic, Rock also made a genius business decision, taking $40,000 out of his advance to buy the masters of two of his previous records from the faltering Continuum label.  When Devil Without A Cause blew up, he sold the masters to Atlantic for a $3 million advance.  &amp;#8220;Somehow,&amp;#8221; Rock says, &amp;#8220;I always win.&amp;#8221;&lt;/p&gt;&lt;p&gt;With the release of Rock N Roll Jesus, Rock is calm and confident, considering what&amp;#8217;s at stake.  Jesus is &amp;#8220;a &amp;#8216;make it to the next level&amp;#8217; record,&amp;#8221; he says. &amp;#8220;That or go play county fairs for the next ten years.&amp;#8221;  He believes this is his comeback.  &amp;#8220;It&amp;#8217;s the best record I&amp;#8217;ve ever made, and it&amp;#8217;s going to move mountains.  I feel more comfortable in my skin than I&amp;#8217;ve ever felt.  I know I&amp;#8217;m a great performer.  I&amp;#8217;ve done that my whole life, but now I&amp;#8217;ve come into my own as a songwriter and musician.&amp;#8221;&lt;/p&gt;</string> 
+    </void> 
+    <void property="name"> 
+     <string>Kid Rock</string> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="Artist"> 
+    <void property="arr_albums"> 
+     <object class="java.util.ArrayList"> 
+      <void method="add"> 
+       <object class="Album"> 
+        <void property="album_name"> 
+         <string>A Thousand Suns</string> 
+        </void> 
+        <void property="artist_id"> 
+         <string>125</string> 
+        </void> 
+        <void property="list_of_songs"> 
+         <object class="java.util.ArrayList"/> 
+        </void> 
+        <void property="release_date"> 
+         <string>2010</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="Album"> 
+        <void property="album_name"> 
+         <string>Hybrid Theory</string> 
+        </void> 
+        <void property="artist_id"> 
+         <string>125</string> 
+        </void> 
+        <void property="list_of_songs"> 
+         <object class="java.util.ArrayList"> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Hybrid Theory</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>125</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.04</float> 
+            </void> 
+            <void property="name"> 
+             <string>Papercut (Album Version)</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Hybrid Theory</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>125</string> 
+            </void> 
+            <void property="duration"> 
+             <float>2.37</float> 
+            </void> 
+            <void property="name"> 
+             <string>One Step Closer (Album Version)</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Hybrid Theory</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>125</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.23</float> 
+            </void> 
+            <void property="name"> 
+             <string>With You (Album Version)</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Hybrid Theory</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>125</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.2</float> 
+            </void> 
+            <void property="name"> 
+             <string>Points Of Authority (Album Version)</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Hybrid Theory</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>125</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.29</float> 
+            </void> 
+            <void property="name"> 
+             <string>Crawling (Album Version)</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Hybrid Theory</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>125</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.04</float> 
+            </void> 
+            <void property="name"> 
+             <string>Runaway (Album Version)</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Hybrid Theory</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>125</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.09</float> 
+            </void> 
+            <void property="name"> 
+             <string>By Myself (Album Version)</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Hybrid Theory</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>125</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.36</float> 
+            </void> 
+            <void property="name"> 
+             <string>In The End (Album Version)</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Hybrid Theory</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>125</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.04</float> 
+            </void> 
+            <void property="name"> 
+             <string>A Place For My Head (Album Version)</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Hybrid Theory</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>125</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.14</float> 
+            </void> 
+            <void property="name"> 
+             <string>Forgotten (Album Version)</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Hybrid Theory</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>125</string> 
+            </void> 
+            <void property="duration"> 
+             <float>2.37</float> 
+            </void> 
+            <void property="name"> 
+             <string>Cure For The Itch (Album Version)</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Hybrid Theory</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>125</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.11</float> 
+            </void> 
+            <void property="name"> 
+             <string>Pushing Me Away (Album Version)</string> 
+            </void> 
+           </object> 
+          </void> 
+         </object> 
+        </void> 
+        <void property="release_date"> 
+         <string>October 24, 2000</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="Album"> 
+        <void property="album_name"> 
+         <string>Meteora</string> 
+        </void> 
+        <void property="artist_id"> 
+         <string>125</string> 
+        </void> 
+        <void property="list_of_songs"> 
+         <object class="java.util.ArrayList"/> 
+        </void> 
+        <void property="release_date"> 
+         <string>2003</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="Album"> 
+        <void property="album_name"> 
+         <string>Minutes to Midnight</string> 
+        </void> 
+        <void property="artist_id"> 
+         <string>125</string> 
+        </void> 
+        <void property="list_of_songs"> 
+         <object class="java.util.ArrayList"> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Minutes to Midnight</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>125</string> 
+            </void> 
+            <void property="duration"> 
+             <float>1.4</float> 
+            </void> 
+            <void property="name"> 
+             <string>Wake</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Minutes to Midnight</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>125</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.09</float> 
+            </void> 
+            <void property="name"> 
+             <string>Given Up</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Minutes to Midnight</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>125</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.29</float> 
+            </void> 
+            <void property="name"> 
+             <string>Leave Out All The Rest</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Minutes to Midnight</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>125</string> 
+            </void> 
+            <void property="duration"> 
+             <float>2.44</float> 
+            </void> 
+            <void property="name"> 
+             <string>Bleed It Out</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Minutes to Midnight</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>125</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.49</float> 
+            </void> 
+            <void property="name"> 
+             <string>Shadow Of The Day</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Minutes to Midnight</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>125</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.28</float> 
+            </void> 
+            <void property="name"> 
+             <string>What I&apos;ve Done</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Minutes to Midnight</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>125</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.53</float> 
+            </void> 
+            <void property="name"> 
+             <string>Hands Held High</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Minutes to Midnight</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>125</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.41</float> 
+            </void> 
+            <void property="name"> 
+             <string>No More Sorrow</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Minutes to Midnight</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>125</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.16</float> 
+            </void> 
+            <void property="name"> 
+             <string>Valentine&apos;s Day</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Minutes to Midnight</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>125</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.16</float> 
+            </void> 
+            <void property="name"> 
+             <string>In Between</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Minutes to Midnight</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>125</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.38</float> 
+            </void> 
+            <void property="name"> 
+             <string>In Pieces</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Minutes to Midnight</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>125</string> 
+            </void> 
+            <void property="duration"> 
+             <float>6.23</float> 
+            </void> 
+            <void property="name"> 
+             <string>The Little Things Give You Away</string> 
+            </void> 
+           </object> 
+          </void> 
+         </object> 
+        </void> 
+        <void property="release_date"> 
+         <string>2007</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="Album"> 
+        <void property="album_name"> 
+         <string>Reanimation (Dig)</string> 
+        </void> 
+        <void property="artist_id"> 
+         <string>125</string> 
+        </void> 
+        <void property="list_of_songs"> 
+         <object class="java.util.ArrayList"/> 
+        </void> 
+        <void property="release_date"> 
+         <string></string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="Album"> 
+        <void property="album_name"> 
+         <string>Collision Course (with DVD)</string> 
+        </void> 
+        <void property="artist_id"> 
+         <string>125</string> 
+        </void> 
+        <void property="list_of_songs"> 
+         <object class="java.util.ArrayList"> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Collision Course (with DVD)</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>125</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.04</float> 
+            </void> 
+            <void property="name"> 
+             <string>Dirt Off Your Shoulder/Lying From You [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Collision Course (with DVD)</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>125</string> 
+            </void> 
+            <void property="duration"> 
+             <float>2.36</float> 
+            </void> 
+            <void property="name"> 
+             <string>Big Pimpin&apos;/Papercut [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Collision Course (with DVD)</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>125</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.31</float> 
+            </void> 
+            <void property="name"> 
+             <string>Jigga What/Faint [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Collision Course (with DVD)</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>125</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.25</float> 
+            </void> 
+            <void property="name"> 
+             <string>Numb/Encore [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Collision Course (with DVD)</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>125</string> 
+            </void> 
+            <void property="duration"> 
+             <float>2.44</float> 
+            </void> 
+            <void property="name"> 
+             <string>Izzo/In The End [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Collision Course (with DVD)</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>125</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.55</float> 
+            </void> 
+            <void property="name"> 
+             <string>Points Of Authority/99 Problems/One Step Closer [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+         </object> 
+        </void> 
+        <void property="release_date"> 
+         <string></string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="Album"> 
+        <void property="album_name"> 
+         <string>Road To Revolution Live At Milton Keynes (CD/DVD)</string> 
+        </void> 
+        <void property="artist_id"> 
+         <string>125</string> 
+        </void> 
+        <void property="list_of_songs"> 
+         <object class="java.util.ArrayList"/> 
+        </void> 
+        <void property="release_date"> 
+         <string>2008</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="Album"> 
+        <void property="album_name"> 
+         <string>Thousand Suns (Gundam Special Collaboration)</string> 
+        </void> 
+        <void property="artist_id"> 
+         <string>125</string> 
+        </void> 
+        <void property="list_of_songs"> 
+         <object class="java.util.ArrayList"/> 
+        </void> 
+        <void property="release_date"> 
+         <string></string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="Album"> 
+        <void property="album_name"> 
+         <string>The Catalyst (CD Single)(Limited)</string> 
+        </void> 
+        <void property="artist_id"> 
+         <string>125</string> 
+        </void> 
+        <void property="list_of_songs"> 
+         <object class="java.util.ArrayList"/> 
+        </void> 
+        <void property="release_date"> 
+         <string></string> 
+        </void> 
+       </object> 
+      </void> 
+     </object> 
+    </void> 
+    <void property="arr_genre"> 
+     <object class="java.util.ArrayList"> 
+      <void method="add"> 
+       <object class="Genre"> 
+        <void property="des"> 
+         <string>none</string> 
+        </void> 
+        <void property="name"> 
+         <string>Rap Rock</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="Genre"> 
+        <void property="des"> 
+         <string>none</string> 
+        </void> 
+        <void property="name"> 
+         <string>Rock</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="Genre"> 
+        <void property="des"> 
+         <string>none</string> 
+        </void> 
+        <void property="name"> 
+         <string>Rap</string> 
+        </void> 
+       </object> 
+      </void> 
+     </object> 
+    </void> 
+    <void property="artist_id"> 
+     <string>125</string> 
+    </void> 
+    <void property="des"> 
+     <string>&lt;p&gt;A THOUSAND SUNS&lt;/p&gt;&lt;p&gt;We were not making an album.&lt;/p&gt;&lt;p&gt;For months, we&amp;#39;d been destroying and rebuilding our band. The experiments that resulted filled the studio hard drive with diverse, abstract sounds. Amorphous echoes, cacophonous samples, and handmade staccato merged into wandering, elusive melody. Each track felt like a hallucination.&lt;/p&gt;&lt;p&gt;We didn&amp;#39;t know if any of those unorthodox ideas could be incorporated into a traditional album, but we knew we didn&amp;#39;t want our next album to be predictable. Sitting together in the same studio where we made our first album, all six of us voiced a commitment to going out on a limb, to making something truly daring. We asked ourselves: were we all earnestly willing, more than ever before, to abandon the precepts of commercial ambition in pursuit of what we believe to be honest art?&lt;/p&gt;&lt;p&gt;The inclination to begin writing conventional songs for a conventional album came and went. The temptation to adjust our creative vision to fulfill expectations beyond our studio walls yielded to the audacious ambition of what he hoped to achieve as a band. The two years of making A Thousand Suns marked our exhilarating, surrealistic, and often challenging journey into the creative unknown.&lt;/p&gt;&lt;p&gt;On the eve of its completion, this body of work, assembled through unconscious inspiration and unmitigated exertion, has revealed to us notions both stirring and surprising.  The imagery personified herein is neither dogma nor political premeditation.  The emergent themes and metaphors illuminate a uniquely human story.&lt;/p&gt;&lt;p&gt;Oppenheimer&amp;#39;s words resonate today not only for their historical significance, but for their emotional gravity.  So, too, A Thousand Suns grapples with the personal cycle of pride, destruction, and regret.  In life, like in dreams, this sequence is not always linear.  And, sometimes, true remorse penetrates the devastating cycle.  The hope, of course, springs from the notion that the possibility of change is born in our most harrowing moments.&lt;/p&gt;&lt;p&gt;Enjoy the music.&lt;/p&gt;&lt;p&gt;Linkin Park&lt;/p&gt;</string> 
+    </void> 
+    <void property="name"> 
+     <string>Linkin Park</string> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="Artist"> 
+    <void property="arr_albums"> 
+     <object class="java.util.ArrayList"> 
+      <void method="add"> 
+       <object class="Album"> 
+        <void property="album_name"> 
+         <string>Greatest Hits</string> 
+        </void> 
+        <void property="artist_id"> 
+         <string>126</string> 
+        </void> 
+        <void property="list_of_songs"> 
+         <object class="java.util.ArrayList"> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Greatest Hits</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.25</float> 
+            </void> 
+            <void property="name"> 
+             <string>Under The Bridge</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Greatest Hits</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.43</float> 
+            </void> 
+            <void property="name"> 
+             <string>Give It Away</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Greatest Hits</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>5.21</float> 
+            </void> 
+            <void property="name"> 
+             <string>Californication</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Greatest Hits</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.35</float> 
+            </void> 
+            <void property="name"> 
+             <string>Scar Tissue</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Greatest Hits</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.52</float> 
+            </void> 
+            <void property="name"> 
+             <string>Soul To Squeeze</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Greatest Hits</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.15</float> 
+            </void> 
+            <void property="name"> 
+             <string>Otherside</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Greatest Hits</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.35</float> 
+            </void> 
+            <void property="name"> 
+             <string>Suck My Kiss</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Greatest Hits</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.35</float> 
+            </void> 
+            <void property="name"> 
+             <string>By The Way</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Greatest Hits</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.29</float> 
+            </void> 
+            <void property="name"> 
+             <string>Parallel Universe</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Greatest Hits</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.54</float> 
+            </void> 
+            <void property="name"> 
+             <string>Breaking The Girl</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Greatest Hits</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.08</float> 
+            </void> 
+            <void property="name"> 
+             <string>My Friends</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Greatest Hits</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.23</float> 
+            </void> 
+            <void property="name"> 
+             <string>Higher Ground</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Greatest Hits</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.17</float> 
+            </void> 
+            <void property="name"> 
+             <string>Universally Speaking</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Greatest Hits</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.25</float> 
+            </void> 
+            <void property="name"> 
+             <string>Road Trippin&apos;</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Greatest Hits</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.21</float> 
+            </void> 
+            <void property="name"> 
+             <string>Fortune Faded</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Greatest Hits</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.05</float> 
+            </void> 
+            <void property="name"> 
+             <string>Save The Population</string> 
+            </void> 
+           </object> 
+          </void> 
+         </object> 
+        </void> 
+        <void property="release_date"> 
+         <string>2003</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="Album"> 
+        <void property="album_name"> 
+         <string>Stadium Arcadium</string> 
+        </void> 
+        <void property="artist_id"> 
+         <string>126</string> 
+        </void> 
+        <void property="list_of_songs"> 
+         <object class="java.util.ArrayList"/> 
+        </void> 
+        <void property="release_date"> 
+         <string>2006</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="Album"> 
+        <void property="album_name"> 
+         <string>Californication</string> 
+        </void> 
+        <void property="artist_id"> 
+         <string>126</string> 
+        </void> 
+        <void property="list_of_songs"> 
+         <object class="java.util.ArrayList"/> 
+        </void> 
+        <void property="release_date"> 
+         <string>June 8, 1999</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="Album"> 
+        <void property="album_name"> 
+         <string>Blood Sugar Sex Magik</string> 
+        </void> 
+        <void property="artist_id"> 
+         <string>126</string> 
+        </void> 
+        <void property="list_of_songs"> 
+         <object class="java.util.ArrayList"/> 
+        </void> 
+        <void property="release_date"> 
+         <string></string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="Album"> 
+        <void property="album_name"> 
+         <string>By the Way</string> 
+        </void> 
+        <void property="artist_id"> 
+         <string>126</string> 
+        </void> 
+        <void property="list_of_songs"> 
+         <object class="java.util.ArrayList"/> 
+        </void> 
+        <void property="release_date"> 
+         <string>2002</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="Album"> 
+        <void property="album_name"> 
+         <string>One Hot Minute</string> 
+        </void> 
+        <void property="artist_id"> 
+         <string>126</string> 
+        </void> 
+        <void property="list_of_songs"> 
+         <object class="java.util.ArrayList"> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>One Hot Minute</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>5.04</float> 
+            </void> 
+            <void property="name"> 
+             <string>Warped</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>One Hot Minute</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.45</float> 
+            </void> 
+            <void property="name"> 
+             <string>Aeroplane</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>One Hot Minute</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>6.33</float> 
+            </void> 
+            <void property="name"> 
+             <string>Deep Kick</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>One Hot Minute</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.08</float> 
+            </void> 
+            <void property="name"> 
+             <string>My Friends</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>One Hot Minute</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.08</float> 
+            </void> 
+            <void property="name"> 
+             <string>Coffee Shop</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>One Hot Minute</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>1.47</float> 
+            </void> 
+            <void property="name"> 
+             <string>Pea</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>One Hot Minute</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>6.02</float> 
+            </void> 
+            <void property="name"> 
+             <string>One Big Mob</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>One Hot Minute</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>5.07</float> 
+            </void> 
+            <void property="name"> 
+             <string>Walkabout</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>One Hot Minute</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.19</float> 
+            </void> 
+            <void property="name"> 
+             <string>Tearjerker</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>One Hot Minute</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>6.23</float> 
+            </void> 
+            <void property="name"> 
+             <string>One Hot Minute</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>One Hot Minute</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.48</float> 
+            </void> 
+            <void property="name"> 
+             <string>Falling Into Grace</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>One Hot Minute</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.33</float> 
+            </void> 
+            <void property="name"> 
+             <string>Shallow Be Thy Game</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>One Hot Minute</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>5.46</float> 
+            </void> 
+            <void property="name"> 
+             <string>Transcending</string> 
+            </void> 
+           </object> 
+          </void> 
+         </object> 
+        </void> 
+        <void property="release_date"> 
+         <string>September 12, 1995</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="Album"> 
+        <void property="album_name"> 
+         <string>Mother&apos;s Milk</string> 
+        </void> 
+        <void property="artist_id"> 
+         <string>126</string> 
+        </void> 
+        <void property="list_of_songs"> 
+         <object class="java.util.ArrayList"> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Mother&apos;s Milk</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>5.01</float> 
+            </void> 
+            <void property="name"> 
+             <string>Good Time Boys (2003 Digital Remaster) [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Mother&apos;s Milk</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.22</float> 
+            </void> 
+            <void property="name"> 
+             <string>Higher Ground (2003 Digital Remaster) [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Mother&apos;s Milk</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.25</float> 
+            </void> 
+            <void property="name"> 
+             <string>Subway To Venus (2003 Digital Remaster) [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Mother&apos;s Milk</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>2.57</float> 
+            </void> 
+            <void property="name"> 
+             <string>Magic Johnson (2003 Digital Remaster) [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Mother&apos;s Milk</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.5</float> 
+            </void> 
+            <void property="name"> 
+             <string>Nobody Weird Like Me (2003 Digital Remaster) [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Mother&apos;s Milk</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.43</float> 
+            </void> 
+            <void property="name"> 
+             <string>Knock Me Down (2003 Digital Remaster) [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Mother&apos;s Milk</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.31</float> 
+            </void> 
+            <void property="name"> 
+             <string>Taste The Pain (2003 Digital Remaster) [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Mother&apos;s Milk</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.05</float> 
+            </void> 
+            <void property="name"> 
+             <string>Stone Cold Bush (2003 Digital Remaster) () [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Mother&apos;s Milk</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>2.03</float> 
+            </void> 
+            <void property="name"> 
+             <string>Fire (2003 Digital Remaster) [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Mother&apos;s Milk</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.07</float> 
+            </void> 
+            <void property="name"> 
+             <string>Pretty Little Ditty (2003 Digital Remaster) [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Mother&apos;s Milk</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>1.46</float> 
+            </void> 
+            <void property="name"> 
+             <string>Punk Rock Classic (2003 Digital Remaster) [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Mother&apos;s Milk</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.22</float> 
+            </void> 
+            <void property="name"> 
+             <string>Sexy Mexican Maid (2003 Digital Remaster) [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Mother&apos;s Milk</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>5.2</float> 
+            </void> 
+            <void property="name"> 
+             <string>Johnny, Kick A Hole In The Sky (2003 Digital Remaster) [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Mother&apos;s Milk</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>12.56</float> 
+            </void> 
+            <void property="name"> 
+             <string>Song That Made Us What We Are Today (Demo) [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Mother&apos;s Milk</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.44</float> 
+            </void> 
+            <void property="name"> 
+             <string>Knock Me Down (Original Long Version) [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Mother&apos;s Milk</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.59</float> 
+            </void> 
+            <void property="name"> 
+             <string>Sexy Mexican Maid (Original Long Version) [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Mother&apos;s Milk</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.24</float> 
+            </void> 
+            <void property="name"> 
+             <string>Salute To Kareem (Demo) [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Mother&apos;s Milk</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.19</float> 
+            </void> 
+            <void property="name"> 
+             <string>Castles Made Of Sand (Live) [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Mother&apos;s Milk</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>2.53</float> 
+            </void> 
+            <void property="name"> 
+             <string>Crosstown Traffic (Live) [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+         </object> 
+        </void> 
+        <void property="release_date"> 
+         <string>1989</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="Album"> 
+        <void property="album_name"> 
+         <string>Uplift Mofo Party Plan</string> 
+        </void> 
+        <void property="artist_id"> 
+         <string>126</string> 
+        </void> 
+        <void property="list_of_songs"> 
+         <object class="java.util.ArrayList"> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Uplift Mofo Party Plan</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.53</float> 
+            </void> 
+            <void property="name"> 
+             <string>Fight Like A Brave (2003 Digital Remaster) () [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Uplift Mofo Party Plan</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.01</float> 
+            </void> 
+            <void property="name"> 
+             <string>Funky Crime (2003 Digital Remaster) () [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Uplift Mofo Party Plan</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.07</float> 
+            </void> 
+            <void property="name"> 
+             <string>Me And My Friends (2003 Digital Remaster) [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Uplift Mofo Party Plan</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.08</float> 
+            </void> 
+            <void property="name"> 
+             <string>Backwoods (2003 Digital Remaster) [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Uplift Mofo Party Plan</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>1.16</float> 
+            </void> 
+            <void property="name"> 
+             <string>Skinny Sweaty Man (2003 Digital Remaster) [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Uplift Mofo Party Plan</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.4</float> 
+            </void> 
+            <void property="name"> 
+             <string>Behind The Sun (2003 Digital Remaster) [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Uplift Mofo Party Plan</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>2.34</float> 
+            </void> 
+            <void property="name"> 
+             <string>Subterranean Homesick Blues (2003 Digital Remaster) [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Uplift Mofo Party Plan</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.15</float> 
+            </void> 
+            <void property="name"> 
+             <string>Special Secret Song Inside (2003 Digital Remaster) [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Uplift Mofo Party Plan</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>2.42</float> 
+            </void> 
+            <void property="name"> 
+             <string>No Chump Love Sucker (2003 Digital Remaster) [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Uplift Mofo Party Plan</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.48</float> 
+            </void> 
+            <void property="name"> 
+             <string>Walkin&apos; On Down The Road (2003 Digital Remaster) [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Uplift Mofo Party Plan</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>2.42</float> 
+            </void> 
+            <void property="name"> 
+             <string>Love Trilogy (2003 Digital Remaster) () [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Uplift Mofo Party Plan</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.1</float> 
+            </void> 
+            <void property="name"> 
+             <string>Organic Anti-Beat Box Band (2003 Digital Remaster) [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Uplift Mofo Party Plan</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>2.55</float> 
+            </void> 
+            <void property="name"> 
+             <string>Behind The Sun (Instrumental Demo) (2002 Digital Remaster) [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Uplift Mofo Party Plan</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>1.56</float> 
+            </void> 
+            <void property="name"> 
+             <string>Me And My Friends (Instrumental Demo) (2003 Digital Remaster) [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+         </object> 
+        </void> 
+        <void property="release_date"> 
+         <string>1987</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="Album"> 
+        <void property="album_name"> 
+         <string>Red Hot Chili Peppers</string> 
+        </void> 
+        <void property="artist_id"> 
+         <string>126</string> 
+        </void> 
+        <void property="list_of_songs"> 
+         <object class="java.util.ArrayList"> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Red Hot Chili Peppers</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.4</float> 
+            </void> 
+            <void property="name"> 
+             <string>True Men Don&apos;t Kill Coyotes (24-Bit Digitally Remastered 02) [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Red Hot Chili Peppers</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.4</float> 
+            </void> 
+            <void property="name"> 
+             <string>Baby Appeal (2002 Digital Remastser) () [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Red Hot Chili Peppers</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.24</float> 
+            </void> 
+            <void property="name"> 
+             <string>Buckle Down (2002 Digital Remaster) [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Red Hot Chili Peppers</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>2.53</float> 
+            </void> 
+            <void property="name"> 
+             <string>Get Up And Jump (2002 Digital Remastser) () [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Red Hot Chili Peppers</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.25</float> 
+            </void> 
+            <void property="name"> 
+             <string>Why Don&apos;t You Love Me (2002 Digital Remaster) [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Red Hot Chili Peppers</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.59</float> 
+            </void> 
+            <void property="name"> 
+             <string>Green Heaven (2002 Digital Remastser) () [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Red Hot Chili Peppers</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.31</float> 
+            </void> 
+            <void property="name"> 
+             <string>Mommy Where&apos;s Daddy (2002 Digital Remaster) [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Red Hot Chili Peppers</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>2.0</float> 
+            </void> 
+            <void property="name"> 
+             <string>Out In L.A. (2002 Digital Remastser) () [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Red Hot Chili Peppers</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>1.16</float> 
+            </void> 
+            <void property="name"> 
+             <string>Police Helicopter (2002 Digital Remaster) [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Red Hot Chili Peppers</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>0.19</float> 
+            </void> 
+            <void property="name"> 
+             <string>You Always Sing The Same (2002 Digital Remaster) [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Red Hot Chili Peppers</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.14</float> 
+            </void> 
+            <void property="name"> 
+             <string>Grand Pappy Du Plenty (2002 Digital Remastser) () [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Red Hot Chili Peppers</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>2.37</float> 
+            </void> 
+            <void property="name"> 
+             <string>Get Up and Jump (Demo Version) (Digitally Remastered 02) () [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Red Hot Chili Peppers</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>1.11</float> 
+            </void> 
+            <void property="name"> 
+             <string>Police Helicopter (Demo Version) (2003 Digital Remaster) [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Red Hot Chili Peppers</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>1.55</float> 
+            </void> 
+            <void property="name"> 
+             <string>Out In L.A. (Demo Version) (2003 Digital Remaster) [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Red Hot Chili Peppers</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.5</float> 
+            </void> 
+            <void property="name"> 
+             <string>Green Heaven (Demo Version) (Digitally Remastered 02) () [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Red Hot Chili Peppers</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>126</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.57</float> 
+            </void> 
+            <void property="name"> 
+             <string>What It Is (AKA Nina&apos;s Song) (Demo) (Digitally Remastered 02) () [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+         </object> 
+        </void> 
+        <void property="release_date"> 
+         <string>1984</string> 
+        </void> 
+       </object> 
+      </void> 
+     </object> 
+    </void> 
+    <void property="arr_genre"> 
+     <object class="java.util.ArrayList"> 
+      <void method="add"> 
+       <object class="Genre"> 
+        <void property="des"> 
+         <string>none</string> 
+        </void> 
+        <void property="name"> 
+         <string>Rap Rock</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="Genre"> 
+        <void property="des"> 
+         <string>none</string> 
+        </void> 
+        <void property="name"> 
+         <string>Rock</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="Genre"> 
+        <void property="des"> 
+         <string>none</string> 
+        </void> 
+        <void property="name"> 
+         <string>Rap</string> 
+        </void> 
+       </object> 
+      </void> 
+     </object> 
+    </void> 
+    <void property="artist_id"> 
+     <string>126</string> 
+    </void> 
+    <void property="name"> 
+     <string>Red Hot Chili Peppers</string> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="Artist"> 
+    <void property="arr_albums"> 
+     <object class="java.util.ArrayList"> 
+      <void method="add"> 
+       <object class="Album"> 
+        <void property="album_name"> 
+         <string>Rage Against the Machine</string> 
+        </void> 
+        <void property="artist_id"> 
+         <string>127</string> 
+        </void> 
+        <void property="list_of_songs"> 
+         <object class="java.util.ArrayList"> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Rage Against the Machine</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>127</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.05</float> 
+            </void> 
+            <void property="name"> 
+             <string>Bombtrack</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Rage Against the Machine</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>127</string> 
+            </void> 
+            <void property="duration"> 
+             <float>5.13</float> 
+            </void> 
+            <void property="name"> 
+             <string>Killing In The Name [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Rage Against the Machine</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>127</string> 
+            </void> 
+            <void property="duration"> 
+             <float>5.36</float> 
+            </void> 
+            <void property="name"> 
+             <string>Take The Power Back</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Rage Against the Machine</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>127</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.48</float> 
+            </void> 
+            <void property="name"> 
+             <string>Settle For Nothing</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Rage Against the Machine</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>127</string> 
+            </void> 
+            <void property="duration"> 
+             <float>5.08</float> 
+            </void> 
+            <void property="name"> 
+             <string>Bullet In The Head</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Rage Against the Machine</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>127</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.57</float> 
+            </void> 
+            <void property="name"> 
+             <string>Know Your Enemy</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Rage Against the Machine</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>127</string> 
+            </void> 
+            <void property="duration"> 
+             <float>6.05</float> 
+            </void> 
+            <void property="name"> 
+             <string>Wake Up</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Rage Against the Machine</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>127</string> 
+            </void> 
+            <void property="duration"> 
+             <float>5.31</float> 
+            </void> 
+            <void property="name"> 
+             <string>Fistful Of Steel</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Rage Against the Machine</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>127</string> 
+            </void> 
+            <void property="duration"> 
+             <float>5.24</float> 
+            </void> 
+            <void property="name"> 
+             <string>Township Rebellion</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Rage Against the Machine</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>127</string> 
+            </void> 
+            <void property="duration"> 
+             <float>6.06</float> 
+            </void> 
+            <void property="name"> 
+             <string>Freedom</string> 
+            </void> 
+           </object> 
+          </void> 
+         </object> 
+        </void> 
+        <void property="release_date"> 
+         <string>November 10, 1992</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="Album"> 
+        <void property="album_name"> 
+         <string>Battle of Los Angeles</string> 
+        </void> 
+        <void property="artist_id"> 
+         <string>127</string> 
+        </void> 
+        <void property="list_of_songs"> 
+         <object class="java.util.ArrayList"> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Battle of Los Angeles</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>127</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.32</float> 
+            </void> 
+            <void property="name"> 
+             <string>Testify</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Battle of Los Angeles</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>127</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.26</float> 
+            </void> 
+            <void property="name"> 
+             <string>Guerrilla Radio</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Battle of Los Angeles</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>127</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.58</float> 
+            </void> 
+            <void property="name"> 
+             <string>Calm Like A Bomb</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Battle of Los Angeles</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>127</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.33</float> 
+            </void> 
+            <void property="name"> 
+             <string>Mic Check</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Battle of Los Angeles</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>127</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.25</float> 
+            </void> 
+            <void property="name"> 
+             <string>Sleep Now In The Fire</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Battle of Los Angeles</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>127</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.4</float> 
+            </void> 
+            <void property="name"> 
+             <string>Born Of A Broken Man</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Battle of Los Angeles</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>127</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.22</float> 
+            </void> 
+            <void property="name"> 
+             <string>Born As Ghosts</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Battle of Los Angeles</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>127</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.48</float> 
+            </void> 
+            <void property="name"> 
+             <string>Maria</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Battle of Los Angeles</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>127</string> 
+            </void> 
+            <void property="duration"> 
+             <float>2.31</float> 
+            </void> 
+            <void property="name"> 
+             <string>Voice Of The Voiceless</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Battle of Los Angeles</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>127</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.44</float> 
+            </void> 
+            <void property="name"> 
+             <string>New Millennium Homes</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Battle of Los Angeles</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>127</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.37</float> 
+            </void> 
+            <void property="name"> 
+             <string>Ashes In The Fall</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Battle of Los Angeles</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>127</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.36</float> 
+            </void> 
+            <void property="name"> 
+             <string>War Within A Breath</string> 
+            </void> 
+           </object> 
+          </void> 
+         </object> 
+        </void> 
+        <void property="release_date"> 
+         <string>November 2, 1999</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="Album"> 
+        <void property="album_name"> 
+         <string>Evil Empire</string> 
+        </void> 
+        <void property="artist_id"> 
+         <string>127</string> 
+        </void> 
+        <void property="list_of_songs"> 
+         <object class="java.util.ArrayList"/> 
+        </void> 
+        <void property="release_date"> 
+         <string>April 16, 1996</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="Album"> 
+        <void property="album_name"> 
+         <string>Collection</string> 
+        </void> 
+        <void property="artist_id"> 
+         <string>127</string> 
+        </void> 
+        <void property="list_of_songs"> 
+         <object class="java.util.ArrayList"/> 
+        </void> 
+        <void property="release_date"> 
+         <string></string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="Album"> 
+        <void property="album_name"> 
+         <string>Live at the Grand Olympic Auditorium</string> 
+        </void> 
+        <void property="artist_id"> 
+         <string>127</string> 
+        </void> 
+        <void property="list_of_songs"> 
+         <object class="java.util.ArrayList"> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Live at the Grand Olympic Auditorium</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>127</string> 
+            </void> 
+            <void property="duration"> 
+             <float>5.19</float> 
+            </void> 
+            <void property="name"> 
+             <string>Bulls On Parade (Live)</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Live at the Grand Olympic Auditorium</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>127</string> 
+            </void> 
+            <void property="duration"> 
+             <float>5.29</float> 
+            </void> 
+            <void property="name"> 
+             <string>Bullet In The Head (Live)</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Live at the Grand Olympic Auditorium</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>127</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.2</float> 
+            </void> 
+            <void property="name"> 
+             <string>Born Of A Broken Man (Live)</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Live at the Grand Olympic Auditorium</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>127</string> 
+            </void> 
+            <void property="duration"> 
+             <float>5.03</float> 
+            </void> 
+            <void property="name"> 
+             <string>Killing In The Name (Live)</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Live at the Grand Olympic Auditorium</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>127</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.5</float> 
+            </void> 
+            <void property="name"> 
+             <string>Calm Like A Bomb (Live)</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Live at the Grand Olympic Auditorium</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>127</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.22</float> 
+            </void> 
+            <void property="name"> 
+             <string>Testify (Live)</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Live at the Grand Olympic Auditorium</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>127</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.06</float> 
+            </void> 
+            <void property="name"> 
+             <string>Bombtrack (Live)</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Live at the Grand Olympic Auditorium</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>127</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.32</float> 
+            </void> 
+            <void property="name"> 
+             <string>War Within A Breath (Live)</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Live at the Grand Olympic Auditorium</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>127</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.47</float> 
+            </void> 
+            <void property="name"> 
+             <string>I&apos;m Housin&apos; (Live)</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Live at the Grand Olympic Auditorium</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>127</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.11</float> 
+            </void> 
+            <void property="name"> 
+             <string>Sleep Now In The Fire (Live)</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Live at the Grand Olympic Auditorium</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>127</string> 
+            </void> 
+            <void property="duration"> 
+             <float>2.27</float> 
+            </void> 
+            <void property="name"> 
+             <string>People Of The Sun (Live)</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Live at the Grand Olympic Auditorium</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>127</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.54</float> 
+            </void> 
+            <void property="name"> 
+             <string>Guerrilla Radio (Live)</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Live at the Grand Olympic Auditorium</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>127</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.21</float> 
+            </void> 
+            <void property="name"> 
+             <string>Kick Out The Jams (Live)</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Live at the Grand Olympic Auditorium</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>127</string> 
+            </void> 
+            <void property="duration"> 
+             <float>5.18</float> 
+            </void> 
+            <void property="name"> 
+             <string>Know Your Enemy (Live)</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Live at the Grand Olympic Auditorium</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>127</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.59</float> 
+            </void> 
+            <void property="name"> 
+             <string>No Shelter (Live)</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Live at the Grand Olympic Auditorium</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>127</string> 
+            </void> 
+            <void property="duration"> 
+             <float>7.05</float> 
+            </void> 
+            <void property="name"> 
+             <string>Freedom (Live)</string> 
+            </void> 
+           </object> 
+          </void> 
+         </object> 
+        </void> 
+        <void property="release_date"> 
+         <string></string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="Album"> 
+        <void property="album_name"> 
+         <string>Renegades</string> 
+        </void> 
+        <void property="artist_id"> 
+         <string>127</string> 
+        </void> 
+        <void property="list_of_songs"> 
+         <object class="java.util.ArrayList"/> 
+        </void> 
+        <void property="release_date"> 
+         <string>December 5, 2000</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="Album"> 
+        <void property="album_name"> 
+         <string>Rage Against the Machine [Vinyl]</string> 
+        </void> 
+        <void property="artist_id"> 
+         <string>127</string> 
+        </void> 
+        <void property="list_of_songs"> 
+         <object class="java.util.ArrayList"/> 
+        </void> 
+        <void property="release_date"> 
+         <string></string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="Album"> 
+        <void property="album_name"> 
+         <string>The Lowdown</string> 
+        </void> 
+        <void property="artist_id"> 
+         <string>127</string> 
+        </void> 
+        <void property="list_of_songs"> 
+         <object class="java.util.ArrayList"/> 
+        </void> 
+        <void property="release_date"> 
+         <string>August 28, 2007</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="Album"> 
+        <void property="album_name"> 
+         <string>People of Sun [Vinyl]</string> 
+        </void> 
+        <void property="artist_id"> 
+         <string>127</string> 
+        </void> 
+        <void property="list_of_songs"> 
+         <object class="java.util.ArrayList"/> 
+        </void> 
+        <void property="release_date"> 
+         <string></string> 
+        </void> 
+       </object> 
+      </void> 
+     </object> 
+    </void> 
+    <void property="arr_genre"> 
+     <object class="java.util.ArrayList"> 
+      <void method="add"> 
+       <object class="Genre"> 
+        <void property="des"> 
+         <string>none</string> 
+        </void> 
+        <void property="name"> 
+         <string>Rap Rock</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="Genre"> 
+        <void property="des"> 
+         <string>none</string> 
+        </void> 
+        <void property="name"> 
+         <string>Rock</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="Genre"> 
+        <void property="des"> 
+         <string>none</string> 
+        </void> 
+        <void property="name"> 
+         <string>Rap</string> 
+        </void> 
+       </object> 
+      </void> 
+     </object> 
+    </void> 
+    <void property="artist_id"> 
+     <string>127</string> 
+    </void> 
+    <void property="name"> 
+     <string>Rage Against The Machine</string> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="Artist"> 
+    <void property="arr_albums"> 
+     <object class="java.util.ArrayList"> 
+      <void method="add"> 
+       <object class="Album"> 
+        <void property="album_name"> 
+         <string>Make Yourself</string> 
+        </void> 
+        <void property="artist_id"> 
+         <string>128</string> 
+        </void> 
+        <void property="list_of_songs"> 
+         <object class="java.util.ArrayList"> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Make Yourself</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.56</float> 
+            </void> 
+            <void property="name"> 
+             <string>Privilege</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Make Yourself</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.3</float> 
+            </void> 
+            <void property="name"> 
+             <string>Nowhere Fast</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Make Yourself</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.18</float> 
+            </void> 
+            <void property="name"> 
+             <string>Consequence</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Make Yourself</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.24</float> 
+            </void> 
+            <void property="name"> 
+             <string>The Warmth</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Make Yourself</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.0</float> 
+            </void> 
+            <void property="name"> 
+             <string>When It Comes</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Make Yourself</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.2</float> 
+            </void> 
+            <void property="name"> 
+             <string>Stellar</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Make Yourself</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.03</float> 
+            </void> 
+            <void property="name"> 
+             <string>Make Yourself</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Make Yourself</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.52</float> 
+            </void> 
+            <void property="name"> 
+             <string>Drive</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Make Yourself</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.55</float> 
+            </void> 
+            <void property="name"> 
+             <string>Clean</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Make Yourself</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.49</float> 
+            </void> 
+            <void property="name"> 
+             <string>Battlestar Scralatchtica</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Make Yourself</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>2.48</float> 
+            </void> 
+            <void property="name"> 
+             <string>I Miss You</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Make Yourself</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.43</float> 
+            </void> 
+            <void property="name"> 
+             <string>Pardon Me</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Make Yourself</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.28</float> 
+            </void> 
+            <void property="name"> 
+             <string>Out From Under</string> 
+            </void> 
+           </object> 
+          </void> 
+         </object> 
+        </void> 
+        <void property="release_date"> 
+         <string>October 26, 1999</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="Album"> 
+        <void property="album_name"> 
+         <string>Monuments &amp; Melodies (2 CD Limited Edition)</string> 
+        </void> 
+        <void property="artist_id"> 
+         <string>128</string> 
+        </void> 
+        <void property="list_of_songs"> 
+         <object class="java.util.ArrayList"> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Monuments &amp; Melodies (2 CD Limited Edition)</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.53</float> 
+            </void> 
+            <void property="name"> 
+             <string>Black Heart Inertia</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Monuments &amp; Melodies (2 CD Limited Edition)</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.52</float> 
+            </void> 
+            <void property="name"> 
+             <string>Drive</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Monuments &amp; Melodies (2 CD Limited Edition)</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.54</float> 
+            </void> 
+            <void property="name"> 
+             <string>Megalomaniac (Album Version (Explicit))</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Monuments &amp; Melodies (2 CD Limited Edition)</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.45</float> 
+            </void> 
+            <void property="name"> 
+             <string>Anna Molly</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Monuments &amp; Melodies (2 CD Limited Edition)</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.57</float> 
+            </void> 
+            <void property="name"> 
+             <string>Love Hurts</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Monuments &amp; Melodies (2 CD Limited Edition)</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.33</float> 
+            </void> 
+            <void property="name"> 
+             <string>Wish You Were Here</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Monuments &amp; Melodies (2 CD Limited Edition)</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.39</float> 
+            </void> 
+            <void property="name"> 
+             <string>Warning</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Monuments &amp; Melodies (2 CD Limited Edition)</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.2</float> 
+            </void> 
+            <void property="name"> 
+             <string>Stellar</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Monuments &amp; Melodies (2 CD Limited Edition)</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.48</float> 
+            </void> 
+            <void property="name"> 
+             <string>Talk Shows On Mute</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Monuments &amp; Melodies (2 CD Limited Edition)</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.44</float> 
+            </void> 
+            <void property="name"> 
+             <string>Pardon Me</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Monuments &amp; Melodies (2 CD Limited Edition)</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.17</float> 
+            </void> 
+            <void property="name"> 
+             <string>Dig</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Monuments &amp; Melodies (2 CD Limited Edition)</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.49</float> 
+            </void> 
+            <void property="name"> 
+             <string>Oil And Water</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Monuments &amp; Melodies (2 CD Limited Edition)</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.23</float> 
+            </void> 
+            <void property="name"> 
+             <string>Are You In?</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Monuments &amp; Melodies (2 CD Limited Edition)</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.43</float> 
+            </void> 
+            <void property="name"> 
+             <string>Nice To Know You</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Monuments &amp; Melodies (2 CD Limited Edition)</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.15</float> 
+            </void> 
+            <void property="name"> 
+             <string>Midnight Swim</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Monuments &amp; Melodies (2 CD Limited Edition)</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.04</float> 
+            </void> 
+            <void property="name"> 
+             <string>Neither Of Us Can See</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Monuments &amp; Melodies (2 CD Limited Edition)</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.21</float> 
+            </void> 
+            <void property="name"> 
+             <string>Look Alive</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Monuments &amp; Melodies (2 CD Limited Edition)</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.53</float> 
+            </void> 
+            <void property="name"> 
+             <string>While All The Vultures Feed</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Monuments &amp; Melodies (2 CD Limited Edition)</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.38</float> 
+            </void> 
+            <void property="name"> 
+             <string>Pantomime</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Monuments &amp; Melodies (2 CD Limited Edition)</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.32</float> 
+            </void> 
+            <void property="name"> 
+             <string>Anything</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Monuments &amp; Melodies (2 CD Limited Edition)</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>5.13</float> 
+            </void> 
+            <void property="name"> 
+             <string>Punch Drunk</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Monuments &amp; Melodies (2 CD Limited Edition)</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.13</float> 
+            </void> 
+            <void property="name"> 
+             <string>Admiration</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Monuments &amp; Melodies (2 CD Limited Edition)</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.09</float> 
+            </void> 
+            <void property="name"> 
+             <string>Martini</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Monuments &amp; Melodies (2 CD Limited Edition)</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.36</float> 
+            </void> 
+            <void property="name"> 
+             <string>A Certain Shade Of Green (Acoustic Version)</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Monuments &amp; Melodies (2 CD Limited Edition)</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>5.04</float> 
+            </void> 
+            <void property="name"> 
+             <string>Monuments And Melodies</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Monuments &amp; Melodies (2 CD Limited Edition)</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.29</float> 
+            </void> 
+            <void property="name"> 
+             <string>Let&apos;s Go Crazy</string> 
+            </void> 
+           </object> 
+          </void> 
+         </object> 
+        </void> 
+        <void property="release_date"> 
+         <string>2009</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="Album"> 
+        <void property="album_name"> 
+         <string>Morning View</string> 
+        </void> 
+        <void property="artist_id"> 
+         <string>128</string> 
+        </void> 
+        <void property="list_of_songs"> 
+         <object class="java.util.ArrayList"/> 
+        </void> 
+        <void property="release_date"> 
+         <string>2001</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="Album"> 
+        <void property="album_name"> 
+         <string>Light Grenades (Snys)</string> 
+        </void> 
+        <void property="artist_id"> 
+         <string>128</string> 
+        </void> 
+        <void property="list_of_songs"> 
+         <object class="java.util.ArrayList"> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Light Grenades (Snys)</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>2.14</float> 
+            </void> 
+            <void property="name"> 
+             <string>Quicksand</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Light Grenades (Snys)</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.16</float> 
+            </void> 
+            <void property="name"> 
+             <string>A Kiss To Send Us Off</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Light Grenades (Snys)</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.17</float> 
+            </void> 
+            <void property="name"> 
+             <string>Dig</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Light Grenades (Snys)</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.45</float> 
+            </void> 
+            <void property="name"> 
+             <string>Anna Molly</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Light Grenades (Snys)</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.57</float> 
+            </void> 
+            <void property="name"> 
+             <string>Love Hurts</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Light Grenades (Snys)</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>2.19</float> 
+            </void> 
+            <void property="name"> 
+             <string>Light Grenades</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Light Grenades (Snys)</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>2.28</float> 
+            </void> 
+            <void property="name"> 
+             <string>Earth To Bella (Part I)</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Light Grenades (Snys)</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.49</float> 
+            </void> 
+            <void property="name"> 
+             <string>Oil And Water</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Light Grenades (Snys)</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.46</float> 
+            </void> 
+            <void property="name"> 
+             <string>Diamonds And Coal</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Light Grenades (Snys)</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.56</float> 
+            </void> 
+            <void property="name"> 
+             <string>Rogues</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Light Grenades (Snys)</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.17</float> 
+            </void> 
+            <void property="name"> 
+             <string>Paper Shoes</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Light Grenades (Snys)</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>5.35</float> 
+            </void> 
+            <void property="name"> 
+             <string>Pendulous Threads</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>Light Grenades (Snys)</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>2.58</float> 
+            </void> 
+            <void property="name"> 
+             <string>Earth To Bella (Part II)</string> 
+            </void> 
+           </object> 
+          </void> 
+         </object> 
+        </void> 
+        <void property="release_date"> 
+         <string>2006</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="Album"> 
+        <void property="album_name"> 
+         <string>S.C.I.E.N.C.E.</string> 
+        </void> 
+        <void property="artist_id"> 
+         <string>128</string> 
+        </void> 
+        <void property="list_of_songs"> 
+         <object class="java.util.ArrayList"/> 
+        </void> 
+        <void property="release_date"> 
+         <string>1997</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="Album"> 
+        <void property="album_name"> 
+         <string>A Crow Left of the Murder</string> 
+        </void> 
+        <void property="artist_id"> 
+         <string>128</string> 
+        </void> 
+        <void property="list_of_songs"> 
+         <object class="java.util.ArrayList"> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>A Crow Left of the Murder</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.56</float> 
+            </void> 
+            <void property="name"> 
+             <string>Megalomaniac [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>A Crow Left of the Murder</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.3</float> 
+            </void> 
+            <void property="name"> 
+             <string>A Crow Left Of The Murder</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>A Crow Left of the Murder</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.52</float> 
+            </void> 
+            <void property="name"> 
+             <string>Agoraphobia [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>A Crow Left of the Murder</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.48</float> 
+            </void> 
+            <void property="name"> 
+             <string>Talk Shows On Mute</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>A Crow Left of the Murder</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.49</float> 
+            </void> 
+            <void property="name"> 
+             <string>Beware! Criminal</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>A Crow Left of the Murder</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>6.23</float> 
+            </void> 
+            <void property="name"> 
+             <string>Sick Sad Little World</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>A Crow Left of the Murder</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.22</float> 
+            </void> 
+            <void property="name"> 
+             <string>Pistola</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>A Crow Left of the Murder</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.42</float> 
+            </void> 
+            <void property="name"> 
+             <string>Southern Girl</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>A Crow Left of the Murder</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.06</float> 
+            </void> 
+            <void property="name"> 
+             <string>Priceless</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>A Crow Left of the Murder</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.53</float> 
+            </void> 
+            <void property="name"> 
+             <string>Zee Deveel</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>A Crow Left of the Murder</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.38</float> 
+            </void> 
+            <void property="name"> 
+             <string>Made For TV Movie</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>A Crow Left of the Murder</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.59</float> 
+            </void> 
+            <void property="name"> 
+             <string>Smile Lines</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>A Crow Left of the Murder</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.19</float> 
+            </void> 
+            <void property="name"> 
+             <string>Here In My Room</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>A Crow Left of the Murder</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.2</float> 
+            </void> 
+            <void property="name"> 
+             <string>Leech [Explicit]</string> 
+            </void> 
+           </object> 
+          </void> 
+         </object> 
+        </void> 
+        <void property="release_date"> 
+         <string></string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="Album"> 
+        <void property="album_name"> 
+         <string>Enjoy Incubus</string> 
+        </void> 
+        <void property="artist_id"> 
+         <string>128</string> 
+        </void> 
+        <void property="list_of_songs"> 
+         <object class="java.util.ArrayList"/> 
+        </void> 
+        <void property="release_date"> 
+         <string>January 7, 1997</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="Album"> 
+        <void property="album_name"> 
+         <string>Fungus Amongus</string> 
+        </void> 
+        <void property="artist_id"> 
+         <string>128</string> 
+        </void> 
+        <void property="list_of_songs"> 
+         <object class="java.util.ArrayList"/> 
+        </void> 
+        <void property="release_date"> 
+         <string>1995</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="Album"> 
+        <void property="album_name"> 
+         <string>When Incubus Attacks, Vol. 1</string> 
+        </void> 
+        <void property="artist_id"> 
+         <string>128</string> 
+        </void> 
+        <void property="list_of_songs"> 
+         <object class="java.util.ArrayList"> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>When Incubus Attacks, Vol. 1</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.49</float> 
+            </void> 
+            <void property="name"> 
+             <string>Pardon Me (acoustic)</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>When Incubus Attacks, Vol. 1</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.16</float> 
+            </void> 
+            <void property="name"> 
+             <string>Stellar (acoustic)</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>When Incubus Attacks, Vol. 1</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.2</float> 
+            </void> 
+            <void property="name"> 
+             <string>Make Yourself (acoustic)</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>When Incubus Attacks, Vol. 1</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>4.45</float> 
+            </void> 
+            <void property="name"> 
+             <string>Crowded Elevator</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>When Incubus Attacks, Vol. 1</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>3.44</float> 
+            </void> 
+            <void property="name"> 
+             <string>Favorite Things (Live)</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="Song"> 
+            <void property="album_name"> 
+             <string>When Incubus Attacks, Vol. 1</string> 
+            </void> 
+            <void property="artist_id"> 
+             <string>128</string> 
+            </void> 
+            <void property="duration"> 
+             <float>8.23</float> 
+            </void> 
+            <void property="name"> 
+             <string>Pardon Me/We&apos;re Smokin&apos;</string> 
+            </void> 
+           </object> 
+          </void> 
+         </object> 
+        </void> 
+        <void property="release_date"> 
+         <string>2000</string> 
+        </void> 
+       </object> 
+      </void> 
+     </object> 
+    </void> 
+    <void property="arr_genre"> 
+     <object class="java.util.ArrayList"> 
+      <void method="add"> 
+       <object class="Genre"> 
+        <void property="des"> 
+         <string>none</string> 
+        </void> 
+        <void property="name"> 
+         <string>Rap Rock</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="Genre"> 
+        <void property="des"> 
+         <string>none</string> 
+        </void> 
+        <void property="name"> 
+         <string>Rock</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="Genre"> 
+        <void property="des"> 
+         <string>none</string> 
+        </void> 
+        <void property="name"> 
+         <string>Rap</string> 
+        </void> 
+       </object> 
+      </void> 
+     </object> 
+    </void> 
+    <void property="artist_id"> 
+     <string>128</string> 
+    </void> 
+    <void property="des"> 
+     <string>&lt;p&gt;&amp;quot;(Art)... rescues us from our self chosen triviality, to which we are so prone. It is like a deep organ note that makes my hair stir and a shiver run through me. I &amp;#39;pull back&amp;#39; from life, like a camera taking a long shot with a wide angle lens. I quite simply become aware of more reality than before.&amp;quot; -Colin Wilson (The Occult)&lt;/p&gt;&lt;p&gt;When I first read this quote, it truly effected me. I felt like someone had finally spoken an iota of truth about creativity and the process it allows to both the creator and the observer. It helped certainties that I have held dear for so long, resonate even deeper within me. And it inevitably made me muse about what we do as a band and group of friends who come together and through a symbiotic chaos of sorts make art and sound. The gratitude I and my friends feel is beyond measure. Gratitude for the experience itself and gratitude to the people who have lent us their attention, if even for three and half minutes.&lt;/p&gt;&lt;p&gt;Now on our sixth album, we (Incubus) have been writing music together long enough that there is a sense of perspective available that has only come to us with time. Some of our earlier works, though pure and even fun at times, lent to a sense of disorganization; a readily apparent lack of focus in my opinion. I have always said, &amp;quot;Yeah, we suck...but we&amp;#39;re really good at it!&amp;quot;&lt;/p&gt;&lt;p&gt;&amp;#39;Light Grenades&amp;#39; is a very new perspective for Incubus. Working, once again, with Super Producer, &amp;#39;Brendan O&amp;#39;Brien&amp;#39;, we spent more time crafting, and sculpting these songs than we ever have historically. Every album we had ever made was written in eight weeks and recorded in eight weeks. A long time by some standards, but alarmingly brief by most. It&amp;#39;s not that we were rushed, we just like working quickly. We wrote twenty-something songs during this sitting. Like proof readers on meth, we devoured songs and only let them live if they excited, surprised and inspired us all! In a nut shell, it took about a year.&lt;/p&gt;&lt;p&gt;&amp;#39;Dig&amp;#39; was toiled over the most I remember because it is the kind of song that is completely new to us. Structurally, integrally, and fundamentally different. And thank- f***ing- God. Lyrically, it&amp;#39;s a nod to camaraderie. And without pepperin&amp;#39; ya&amp;#39;lls interpretation of it too much, it speaks to the importance of forgiveness and compassion. Little alien concepts that some choose to toy with on occasion.&lt;/p&gt;&lt;p&gt;&amp;#39;A Kiss to Send Us Off&amp;#39; shows Incubus in our most primal incarnation. It floors you but simultaneously leaves you thinking. But seriously, that song puts my balls in a vacuum cleaner hose and turns the power to 12. It hurts sometimes, but it leaves my balls satisfied and clean. Think about THAT!&lt;/p&gt;&lt;p&gt;&amp;#39;Anna-Molly&amp;#39; delivers a similar push but has a far more sophisticated bent, in that it rocks, but conjures imagery of a girl that I can see in my minds eye but most likely doesn&amp;#39;t exist. Therefore being a bit of an anomaly. I guess that is relatively sophisticated...right? f***. I actually hate trying to explain what these or any of our songs mean! And it&amp;#39;s really not fair for me to condescend to do that in the first place. If you care to, let them be about whatever you want. Our single, &amp;#39;Megalomaniac&amp;#39; from our last album (A Crow Left Of the Murder) was interpreted in ways that I never intended. It wasn&amp;#39;t far from home base, but was nowhere near as case specific as it seemed. Which is fine with us. Good! Think of it what you will. And for doG&amp;#39;s sake, start your own band!&lt;/p&gt;&lt;p&gt;While home over the past two years, we had a chance to unpack for the first time in almost a decade. Isn&amp;#39;t it interesting that to so many people we are a new band, while we have been writing music together, for better or worse, for fifteen years now. Coming home in November of 2004 was an important decision. Not only were we road weary and dried up, but each one of us in his own way needed to step back from the monster that we had created and re-access what had transpired.&lt;/p&gt;&lt;p&gt;Michael Einziger, in his down time, wrote original music for a surf documentary entitled &amp;#39;Flow&amp;#39; (Directed by Josh Landon) and was nominated at XDance film festival for best original score. I peed on the same tree as well, but lent my speaking voice to narrate the story of said documentary. And yes, I sounded f***ing sexy. Michael also lent his producing skills to his brother&amp;#39;s band, Agent Sparks, and is also currently involved with the scores of several motion pictures.&lt;/p&gt;&lt;p&gt;I have been feverishly working on the follow up to my self published book entitled, &amp;#39;White Fluffy Clouds&amp;#39;, and expect the newbie to be available for criticism by December of 2006. &amp;#39;From the Murks of the Sultry Abyss&amp;#39; is a compendium of images both real and unreal; painted, photographed, scratched and typed.&lt;/p&gt;&lt;p&gt;Jose Pasillas has been exploring his love of art in mixed mediums from canvas, to computer and everything in between. And by day he happily frolics through the grasslands of his hometown with his two feline friends. (Total hippy.)&lt;/p&gt;&lt;p&gt;DJ Chris Kilmore spent the past few years expanding upon his already stellar reputation as a world class DJ by learning and incorporating a bevy of new instruments into our fold. Turntables, the Theremin, and Moog keys have been creeping into our collective via Chris for some time. But the Guitar-o-phone, Mellotron, Fender Roads, and the kitchen sink are welcomed suprises! Thanks Kil.&lt;/p&gt;&lt;p&gt;Ben Kenney has been writing music and performing with his side project, &amp;#39;The Division Group&amp;#39;, and produced the latest album from a young band called &amp;#39;The Smyrk&amp;#39;.&lt;/p&gt;&lt;p&gt;All this and we still managed to conceive and carry out what I believe to be our most worthy album to date. If ever asked which album I preferred personally in our arsenal of sound, I would invariably tell you that I most liked whatever was the latest. But this time, I really mean it!&lt;/p&gt;&lt;p&gt;I think I can speak for my band when I say that we are interested in movement, experimentation and freedom. Being in this band has allowed us the freedom to move in and around other artistic endeavors. Like meandering streams we each wandered off over the past two years; only to be drawn unconsciously back to the ocean where all streams converge. And thus composed &amp;#39;Light Grenades&amp;#39;, our sixth studio album.&lt;/p&gt;&lt;p&gt;What I am getting at (sort of) is that art has rescued us in many ways. Through circumstance, chance, good fortune, a teeny, weeny bit of talent, and an ardor for expressivity, Incubus has survived long enough to garnish a perspective onto itself. &amp;quot;Like a camera taking a long shot with a wide angle lens,&amp;quot; we conjured &amp;#39;Light Grenades&amp;#39;; a forty-seven and some odd seconds long bulbous mass of sound and intention captured on tape. &amp;#39;Light Grenades&amp;#39; that explode with consciousness, light, art and mind. If you enjoy it, we thank you. If not? Then my dog is French and he already pooped under your pillow.&lt;/p&gt;&lt;p&gt;-Brandon&lt;/p&gt;</string> 
+    </void> 
+    <void property="name"> 
+     <string>Incubus</string> 
+    </void> 
+   </object> 
+  </void> 
+ </object> 
+</java> 
