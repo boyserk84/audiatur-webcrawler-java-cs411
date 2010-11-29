@@ -23,7 +23,7 @@ public class AmazonCrawler extends Crawler implements Serializable{
 	private static final long serialVersionUID = 1L;
 	protected List<Artist> arr_artist;
 	private List<String> arr_URL;
-	private List<Artist> temp_artists;
+	protected List<Artist> temp_artists;
 	protected Hashtable<String,Long> artist_hash;
 	private String option_URL = "";
 	
@@ -373,6 +373,7 @@ public class AmazonCrawler extends Crawler implements Serializable{
 	public void saveasXMLFile(String filename) throws FileNotFoundException
 	{
 		//System.out.println(filename);
+		
 		this.xml_filename = filename;
 		saveasXML();
 	}
@@ -438,6 +439,28 @@ public class AmazonCrawler extends Crawler implements Serializable{
 	protected void fetchEachEntry(BufferedReader in) throws IOException {
 		// TODO Auto-generated method stub
 		
+	}
+
+	public List<Artist> getArr_artist() {
+		return arr_artist;
+	}
+
+	public void setArr_artist(List<Artist> arr_artist) {
+		this.arr_artist = arr_artist;
+	}
+	
+	/**
+	 * Get artist at a particular index
+	 * @param index index
+	 * @return Null if not found, otherwise, artist object is returned
+	 */
+	public Artist getArtistIndexOf(int index)
+	{
+		if (index > 0 && index < this.arr_artist.size())
+		{
+			return this.arr_artist.get(index);
+		}
+		return null;
 	}
 
 }
