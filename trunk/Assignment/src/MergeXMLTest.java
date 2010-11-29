@@ -11,6 +11,15 @@ import junit.framework.TestCase;
 public class MergeXMLTest extends TestCase{
 	
 	@Test
+	public void testMergeFix() throws FileNotFoundException
+	{
+		MergeXML test = new MergeXML(true);
+		test.printAllArtist_Year();
+	}
+	
+	
+	
+/*	@Test
 	public void testMergeXML() throws FileNotFoundException
 	{
 		List<String> xml_files = new ArrayList<String>();
@@ -31,6 +40,6 @@ public class MergeXMLTest extends TestCase{
 		MergeXML test = new MergeXML(xml_files);
 		test.printOnlyArtists();
 		
-		//test.saveasXMLFile("audiatur_list.xml");
-	}
+		test.saveasXMLFile("audiatur_list.xml");
+	}*/
 }

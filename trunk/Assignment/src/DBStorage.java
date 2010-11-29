@@ -26,6 +26,9 @@ public class DBStorage {
 	private final String TB_GENRES = "genres";
 	
 	
+	/**
+	 * Connect
+	 */
 	public DBStorage()
 	{
 		conn = this.dbConnect("jdbc:mysql://localhost/audiatur", "root", "");
@@ -43,6 +46,11 @@ public class DBStorage {
 		}
 	}
 	
+	/**
+	 * Adding artist data to the table
+	 * @param table table
+	 * @param data artist
+	 */
 	private void addRowToTable(String table, Artist data)
 	{
 		String command = null;
@@ -54,9 +62,9 @@ public class DBStorage {
 			+ "','"
 			+ data.getDes().replace(";", "").replace("'", "&rsquo;").replace("\"","&quot;" )
 			+ "','"
-			+ data.getYear_found()
+			+ ((data.getYear_found()==3000)?1890:data.getYear_found()) 
 			+ "')");
-			System.out.println(command);
+			//System.out.println(command);
 			stmt.executeUpdate(command);
 
 		} catch (Exception e)
@@ -67,6 +75,10 @@ public class DBStorage {
 		}
 	}
 	
+	/**
+	 * Add artist data to artist Table
+	 * @param data
+	 */
 	public void addRowtoArtistsTable(Artist data)
 	{
 		addRowToTable(TB_ARTIST,data);
@@ -75,6 +87,34 @@ public class DBStorage {
 	public void addRowtoAlbumsTable(Album data)
 	{
 		addRowToTableAlbum(data);
+	}
+	
+	/**
+	 * Add rows (albums) to albums table
+	 * @param data artist object
+	 */
+	public void addRowstoAlbumsTable(Artist data)
+	{
+		for (int i = 0; i < data.getArr_albums().size(); i++) 
+		{
+			addRowToTableAlbum(data.getArr_albums().get(i));
+		}
+	}
+	
+	/**
+	 * Add rows (songs) to songs table
+	 * @param data artist object
+	 */
+	public void addRowstoSongsTable(Artist data)
+	{
+		for (int i = 0; i < data.getArr_albums().size(); i++) 
+		{
+			for (int j = 0; j < data.getArr_albums().get(i).getList_of_songs().size(); j++) 
+			{
+				addRowtoSongsTable(data.getArr_albums().get(i).getList_of_songs().get(j));
+			}
+			//addRowToTableAlbum(data.getArr_albums().get(i));
+		}
 	}
 	
 	public void addRowtoSongsTable(Song data)
@@ -142,6 +182,7 @@ public class DBStorage {
 		String command = null;
 		for (int i = 0; i < data.getArr_genre().size(); i++) {
 			try {
+				
 				stmt = conn.createStatement();
 				command = ("INSERT INTO " + TB_AR_GENRE + "(artist_id,genre_name)"
 						+ "VALUES('" 
@@ -149,12 +190,12 @@ public class DBStorage {
 						+ "','"
 						+ data.getArr_genre().get(i).getName()
 						+ "')" );
-				System.out.println(command);
+				//System.out.println(command);
 				stmt.executeUpdate(command);
 
 			} catch (Exception e)
 			{
-				System.out.println(e);
+				//System.out.println(e);
 				System.out.println(command);
 				System.out.println("Fail to Insert to " + TB_ALBUMS + " with " + data.getArtist_id());
 			}
@@ -172,11 +213,11 @@ public class DBStorage {
 			+ "','"
 			+ data.getAlbum_name().replace(";", "").replace("\'", "&rsquo;").replace("\"","&quot;" ).replace("[", "").replace("]","")
 			+ "','"
-			+ data.getName()
+			+ data.getName().replace("\'","&rsquo;")
 			+ "','"
-			+ data.getDuration()
+			+ Float.toString(data.getDuration()).replace(".", ":") .replace("[","").replace("]", "").replace("\"", "$quot;")
 			+ "')" );
-			System.out.println(command);
+			//System.out.println(command);
 			stmt.executeUpdate(command);
 
 		} catch (Exception e)
@@ -202,21 +243,50 @@ public class DBStorage {
 			+ "','"
 			+ sanitizeDate(data.getRelease_date().replace(".", "-"))
 			+ "')" );
-			System.out.println(command);
+			//System.out.println(command);
 			stmt.executeUpdate(command);
 
 		} catch (Exception e)
 		{
-			System.out.println(e);
+			//System.out.println(e);
 			System.out.println(command);
-			System.out.println("Fail to Insert to " + TB_ALBUMS + " with " + data.getArtist_id());
+			//System.out.println("Fail to Insert to " + TB_ALBUMS + " with " + data.getArtist_id());
 		}
 	}
 	
+	/**
+	 * 
+	 * @param str
+	 * @return
+	 */
 	private String sanitizeDate(String str)
 	{
-		String[] temp = str.split("-");
-		return temp[2] + "-" + temp[0] + "-"+ temp[1];
+		//String[] temp = str.split("-");
+		try {
+			// if only 4 digit
+			Integer.parseInt(str);
+			str = str.concat("-01-01");
+		} catch (Exception e)
+		{
+			// if month format involve
+			str = str.replace("January","01");
+			str = str.replace("February","02");
+			str = str.replace("March","03");
+			str = str.replace("April","04");
+			str = str.replace("May","05");
+			str = str.replace("June","06");
+			str = str.replace("July","07");
+			str = str.replace("August","08");
+			str = str.replace("September","09");
+			str = str.replace("October","10");
+			str = str.replace("November","11");
+			str = str.replace("December","12");
+		}
+		
+		
+		return str.replace(",", "");
+		
+		//return temp[2] + "-" + temp[0] + "-"+ temp[1];
 	}
 	
 	/**

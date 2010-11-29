@@ -2,12 +2,13 @@ import java.beans.XMLDecoder;
 import java.io.BufferedInputStream;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
 
 /**
- * ISSUES with duplicate and reorder of artist ID after found duplicate
+ * ISSUES:
  */
 
 /**
@@ -16,10 +17,14 @@ import java.util.List;
  * @author nkemav2
  *
  */
-public class MergeXML extends AmazonCrawler{
+public class MergeXML extends AmazonCrawler implements Serializable{
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private List<String> files;	// List of XML files
-	private List<Artist> temp_artists;
+	//private List<Artist> temp_artists;
 	
 	
 	/**
@@ -31,12 +36,105 @@ public class MergeXML extends AmazonCrawler{
 	{
 		files = f;
 		this.loadXML(files.get(0)); // only for first xml file only
-		
+	
 		for (int i = 1; i < f.size(); i++) 
 		{
 			mergeData(i);
 		}
-		this.saveasXMLFile("audiatur.xml");
+	}
+	
+	/**
+	 * MergeXML for repairing format in the XML ONLY
+	 * @param fix
+	 * @throws FileNotFoundException
+	 */
+	public MergeXML(Boolean fix) throws FileNotFoundException
+	{
+		this.loadXML("audiatur_list.xml");
+		
+		// Fix Null Description
+		for (int i = 0; i < this.arr_artist.size(); i++) {
+			// fix null description
+			if (this.arr_artist.get(i).getDes()==null)
+			{
+				this.arr_artist.get(i).setDes("No Info available");
+			}
+		}
+		
+		// Fix Year Found
+		for (int i = 126; i < this.arr_artist.size(); i++) {
+			//System.out.println(i + " : " + this.arr_artist.get(i).getName());
+			findYearFound(this.arr_artist.get(i));
+		}
+		this.saveAsXML(this.arr_artist, "audiatur_fix1.xml");
+	}
+	
+	/**
+	 * Print artist and year founded
+	 */
+	public void printAllArtist_Year()
+	{
+		for (int i = 0; i < this.arr_artist.size(); i++) 
+		{
+			System.out.println(this.arr_artist.get(i).getArtist_id() + ":" + this.arr_artist.get(i).getName() + ":" + this.arr_artist.get(i).getYear_found());
+		}
+	}
+	
+	/**
+	 * Find year_found of the artist based on their album
+	 * @param data
+	 */
+	private void findYearFound(Artist data)
+	{
+		String [] temp_str = new String[3];
+		//String current_year = new String();
+		int year = 0, min_year=0;
+		String year_found = new String();
+		
+		
+		for (int i = 0; i < data.getArr_albums().size(); i++) 
+		{
+			year_found = data.getArr_albums().get(i).getRelease_date();
+			//System.out.println("Year Found: " + data.getArr_albums().get(i).getRelease_date());
+			try {
+				temp_str = data.getArr_albums().get(i).getRelease_date().split(" ");
+				year = Integer.parseInt(temp_str[2]);
+				if (i==0)
+				{
+					min_year = year;
+				}
+				
+				//Fix Album release date Format into this formats
+				data.getArr_albums().get(i).setRelease_date(temp_str[2] + "-" + temp_str[0] + "-" + temp_str[1]);
+				//System.out.println(data.getArr_albums().get(i).getRelease_date());
+				//System.out.println("New Format: " + year);
+			} catch (Exception e)
+			{
+				// if empty (album release date is empty or none)
+				if (year_found.equals("") || year_found.isEmpty())
+				{
+					// Fix album release date
+					data.getArr_albums().get(i).setRelease_date("3000");
+				}
+				
+				
+				year = Integer.parseInt(data.getArr_albums().get(i).getRelease_date());
+				if (i==0)
+				{
+					min_year = year;
+				}
+				//System.out.println("Prev Format: " + data.getArr_albums().get(i).getRelease_date());
+			}
+			
+			// Comparison
+			if (min_year > year){
+				min_year = year;
+			}
+			
+		}
+		
+		//System.out.println(min_year);
+		data.setYear_found(min_year);
 		
 	}
 
